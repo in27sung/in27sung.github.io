@@ -163,7 +163,7 @@ translate_langs:
 defaults:
   home:
     heading: "Welcome to Insung's blog"
-    subheading: "devleop diary"
+    subheading: "develop diary"
 #     banner: "Your image url"
 
 # Banner default settings

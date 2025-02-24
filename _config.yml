@@ -160,10 +160,10 @@ translate_langs:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+defaults:
+  home:
+    heading: "Welcome to Insung's blog"
+    subheading: "devleop diary"
 #     banner: "Your image url"
 
 # Banner default settings

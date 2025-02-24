@@ -235,7 +235,6 @@ defaults:
 #   issue_term: "title"
 #   label: "utterances comment"
 #   theme: "github-light"
-theme: "jeffreytse/jekyll-theme-yat"
 #   follow_site_theme: true
 
 # Build settings

@@ -30,11 +30,11 @@ author: in27sung
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
-* current year: {currentYear}
-* author: {author} (Value is the same as site.author)
-* copyright: (c) - ©
-* copyleft: (cleft)
-* sound recording copyright: (p) - ℗
+# * current year: {currentYear}
+# * author: {author} (Value is the same as site.author)
+# * copyright: (c) - ©
+# * copyleft: (cleft)
+# * sound recording copyright: (p) - ℗
 #
 # For example:
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"

@@ -160,10 +160,10 @@ translate_langs:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+defaults:
+  home:
+    heading: "Welcome to Insung's blog"
+    subheading: "develop diary"
 #     banner: "Your image url"
 
 # Banner default settings
@@ -235,6 +235,7 @@ translate_langs:
 #   issue_term: "title"
 #   label: "utterances comment"
 #   theme: "github-light"
+theme: jekyll-theme-yat
 #   follow_site_theme: true
 
 # Build settings

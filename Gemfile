@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+gem "jekyll"
 gem "bigdecimal"
 gem "jekyll-theme-yat"
-gem "jekyll-remote-theme", "~> 0.4.1", group: :jekyll_plugins
+gem "jekyll-remote-theme", group: :jekyll_plugins
 gem 'base64'
 gem 'csv'
 

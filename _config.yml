@@ -77,7 +77,7 @@ lang: "en"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
-# translate_langs:
+ translate_langs:
   - lang: en
     img: https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png
     text: English
@@ -110,8 +110,8 @@ snowwhite: #ffffff
 
 theme_color: snowwhite
 
-Custom color as below:
-theme_color: "#882250"
+#Custom color as below:
+#theme_color: "#882250"
 
 # You can choose a brand color
 # Default brand colors as below:
@@ -121,8 +121,8 @@ greenblue: #389092
 
 brand_color: orangered
 
-Custom color as below:
-brand_color: "#1a8e42"
+#Custom color as below:
+#brand_color: "#1a8e42"
 
 # You can custom selection style
 selection:

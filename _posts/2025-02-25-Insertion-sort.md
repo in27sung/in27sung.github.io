@@ -38,3 +38,4 @@ for i = 2 to n
 Figure 2.2 shows how this algorithm works for an array A that starts out with the sequence <5, 2, 4, 6, 1, 3>. The index $i$ indicates the "current card" being inserted into the hand. At the beginning of each iteration of the **for** loop, which is indexed by $i$, the <span style="color:blue">*subarray* </span> (a contiguous portion of the array) consisting of elements `A[1: i - 1]` (that is, `A[1]` through `A[i - 1]`)constitutes the currently sored hand, and the remaining subarray `A[i + 1:n]` (elements `A[i + 1]` through `A[n]`) corresponds to the pile of card still on the table. In face, elements `A[1: i - 1]` are the elements originally in positions 1 through $$i - 1$$, but now in sorted order. We state these properties of `A[1: i - 1]` formally as a <span style="color:blue">*loop invariant* </span>:
 
 ![image](https://github.com/user-attachments/assets/c3f3cc8b-26d0-4c53-9ef2-a6f0f4f95991)
+

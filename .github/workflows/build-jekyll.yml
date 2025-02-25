@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # Specify the Ruby version
+          ruby-version: '3.0.0'  # Specify the correct Ruby version
 
       - uses: actions/cache@v3
         with:

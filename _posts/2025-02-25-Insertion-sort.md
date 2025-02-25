@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Insertion sort
-subtitle: This is a quick markdown example
+title: 2.1 Insertion sort
+subtitle: Introduction to algorithm
 excerpt_image: https://github.com/user-attachments/assets/34172b0d-4abd-4f10-80f1-758d9cd140df
 categories: markdown
 tags: [algorithm]

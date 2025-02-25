@@ -37,4 +37,4 @@ for i = 2 to n
 
 Figure 2.2 shows how this algorithm works for an array A that starts out with the sequence <5, 2, 4, 6, 1, 3>. The index $i$ indicates the "current card" being inserted into the hand.
 
-![figure-2.2](../images/2025-02-25-Insertion-sort/figure-2.2.png)
+![image](https://github.com/user-attachments/assets/c3f3cc8b-26d0-4c53-9ef2-a6f0f4f95991)

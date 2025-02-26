@@ -27,7 +27,7 @@ for i = 2 to n
   key = A[i]
   // Insert A[i] into the sorted subarray A[1:i - 1]
   j = i - 1
-  whiel j > 0 and A[j] > key
+  while j > 0 and A[j] > key
     A[j + 1] = A[j]
     j = j - 1
   A[j + 1] = key
@@ -39,6 +39,56 @@ Figure 2.2 shows how this algorithm works for an array `A` that starts out with 
 
 ![image](https://github.com/user-attachments/assets/c3f3cc8b-26d0-4c53-9ef2-a6f0f4f95991)
 
-For example, $ 2 ^ {53} - 1 $ is a safe integer,
+**Initialisation:** It is true prior to the first iteration of the loop.
 
-* it can be exactly represented 
+- Purpose: To set up the algorithm before it starts processing.
+- Explanation:
+  - The algorithm starts with the second elements of the array (i = 2), as the first element is considered "sorted" (a single element is trivially sorted).
+  - For each elemnet starting from the second position, the algorithm will attempt to insert it into the sorted aubarray that begin at the first element.
+
+- Example:
+
+  `A = [5, 2, 4, 6, 1, 3]`
+
+**Maintenance:** If is true before an iteration of the loop, it remains true before the next iteration.
+
+- Purpose: This step keeps the sorting process ongoing by iterating through the array and ensuring that the array is progressively sorted.
+- Explanation:
+  - **In each iteration:** The current element `A[i]` is comparted with elements in the sorted subarray (`A[0]` to `A[i - 1]`).
+  - This comparison continues until the correct position for `A[i]` is found. The elements grater than `A[i]` are shifted one position to the right, making space for `A[i]` to be inserted at the correct location.
+- Example: (continuing form above)
+  - After the first comparison, `A[1]` (which is 2) is compared with `A[0]` (which is 5).
+  - Since $2 /gt 5$, we shift 5 to the right and insert 2 in the first position. Now the array looks like this: `[2, 5, 4, 6, 1, 3]`.
+
+The maintenance step guarantess that the array is sorted from the begginning up to i.
+
+**Termination:** The loop terminates, and when it terminates, the invariant – usually along with the reason that the loop terminated – gives us a useful property that helps show that the algorithms is correct.
+
+- Purpose: The algorithm stops when all elements have been inserted in to the sorted portion of the array.
+- Explanation:
+  - The algorithm terminates when the index `i` exceeds the length of the array. At this point, all elements have been processed, and the array is fully sorted.
+- Example:
+  - Once the algorithm reaches the last element `A[5]`, after completing all necessary comparisons and shifts, the sorted array is: `[1, 2, 3, 4, 5, 6]`.
+
+```python
+def inssertion_sort(A, n):
+	for i in range(1, n):
+    key = A[i] # Start from the second element
+    j = i - 1
+    # Shift elements of A[0..i-1], that are greater than key, to one postion ahead 
+    while j >= 0 and A[j] > key:
+      A[j + 1] = A[j]
+      j -= 1
+    A[j + 1] = key # Insert the key at its correct position
+
+# Example usage
+A = [5, 2, 4, 6, 1, 3]
+n = len(A)
+insertion_sort(A, n)
+print(A) # Output: [1, 2, 3, 4, 5, 6]
+```
+
+
+
+
+

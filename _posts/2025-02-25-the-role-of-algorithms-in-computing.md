@@ -8,11 +8,11 @@ tags: [algorithm]
 top: 
 ---
 
-# The Role of Algorithms in Computing
+## The Role of Algorithms in Computing
 What are algorithms? Why is the study of algorithms worthwhile? What is the role of algorithms relative to other technologies used in computers? This chapter will answer these questions.
 
 ---
-# 1.1 Algorithms 
+## 1.1 Algorithms 
 
 ### Definition of an Algorithm:
 - An algorithm is a sequence of computational steps that transform the input into the output.

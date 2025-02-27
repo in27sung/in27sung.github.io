@@ -3,12 +3,10 @@ layout: post
 title: Chapter14 Dynamic Programming
 subtitle: Introduction to algorithm
 excerpt_image: https://github.com/user-attachments/assets/34172b0d-4abd-4f10-80f1-758d9cd140df
-categories: markdown
+categories: Algorithm
 tags: [algorithm]
 top: 
 ---
-## Dynamic Programming
-
 - like the divide-and-conquer method, solves problems by combining the solutions to subproblems.
 - typically apllies to **optimization problems**.
 - To develop a dynamic-programming algorithm, follow a sequence of four steps:

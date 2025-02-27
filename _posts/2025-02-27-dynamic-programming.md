@@ -7,9 +7,7 @@ categories: markdown
 tags: [algorithm]
 top: 
 ---
-
-
-# Dynamic Programming
+## Dynamic Programming
 
 - like the divide-and-conquer method, solves problems by combining the solutions to subproblems.
 - typically apllies to **optimization problems**.

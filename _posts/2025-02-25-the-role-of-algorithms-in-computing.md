@@ -12,7 +12,7 @@ top:
 # The Role of Algorithms in Computing
 What are algorithms? Why is the study of algorithms worthwhile? What is the role of algorithms relative to other technologies used in computers? This chapter will answer these questions.
 
-## 1.1 Algorithms 
+# 1.1 Algorithms 
 
 ### Definition of an Algorithm:
 - An algorithm is a sequence of computational steps that transform the input into the output.
@@ -44,7 +44,7 @@ What are algorithms? Why is the study of algorithms worthwhile? What is the role
 - In order to perform more computations per second, therefore, chips are being designed to contain not just one but several processing 'cores'. We can liken these multicore computers to several sequential computers on a single chip. In other words, they are a type of 'parallel computer'.
 - Algorithms that reveive their input over time, rather than having all the input present at the start, are **online algorithms**.
 
-## 1.2 Algorithms as a technology
+# 1.2 Algorithms as a technology
 
 ### Efficiency:
 - Different algorithms devised to solve the same problem often differ dramatically in their efficiency.

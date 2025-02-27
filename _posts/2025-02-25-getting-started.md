@@ -8,8 +8,7 @@ tags: [algorithm]
 top: 
 ---
 
-
-# Getting Started 
+## Getting Started 
 This chapter will familiarise you with the framework we'll use throughout the book to think about the design and analysis of algorithms. We'll begin by examining the insertion sort algorithm to solve the sorting problem. We'll specify algorithms using a pseudocode that should be understandable to you if you have done computer programming. We'll see why insertion sort correctly sorts and analyse its running time. The analysis introduces a notation that describes how running time increases with the number of times to be sorted. Following a discussion of insertion sort, we'll use a method called divide-and-conquer to develop a sorting algorithm called marge sort. We'll end with an analysis of merge sort's running time.
 
 ---

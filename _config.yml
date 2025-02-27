@@ -53,6 +53,7 @@ favicon: "" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+timezone: "Asia/Seoul"
 yat:
   date_format: "%b %d, %Y"
 

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: The Role of Algorithms in Computing
+title: Chapter1 The Role of Algorithms in Computing
 subtitle: Introduction to algorithm
 excerpt_image: https://github.com/user-attachments/assets/34172b0d-4abd-4f10-80f1-758d9cd140df
 categories: markdown
 tags: [algorithm]
 top: 
 ---
+# The Role of Algorithms in Computing
+What are algorithms? Why is the study of algorithms worthwhile? What is the role of algorithms relative to other technologies used in computers? This chapter will answer these questions.
 
 ## 1.1 Algorithms 
 

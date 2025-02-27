@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Insung's blog
+title: The Data Explorer
 email: in27sung@gmail.com
 author: Insung Hwang
 
@@ -160,11 +160,11 @@ header_pages:
   - about.html
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Insung’s Tech Journal"
+    subheading: "Exploring the world of algorithms, data science, and AI"
+    # banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

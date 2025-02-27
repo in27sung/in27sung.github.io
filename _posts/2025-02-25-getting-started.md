@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Getting Started
+title: Chatpter2 Getting Started
 subtitle: Introduction to algorithm
 excerpt_image: https://github.com/user-attachments/assets/34172b0d-4abd-4f10-80f1-758d9cd140df
 categories: markdown
 tags: [algorithm]
 top: 
 ---
+# Getting Started 
 
 ## 2.1 Insertion sort
 

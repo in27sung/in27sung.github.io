@@ -2,7 +2,8 @@
 layout: post
 title: Chapter1 The Role of Algorithms in Computing
 subtitle: Introduction to algorithm
-excerpt_image: https://github.com/user-attachments/assets/5df38186-34b1-41f1-a1ec-4de5f1b586a8
+excerpt_image: https://github.com/user-attachments/assets/b2f78edb-0f8a-4b65-a4ef-9d529e4c655b
+
 categories: Algorithm
 tags: [algorithm]
 top: 

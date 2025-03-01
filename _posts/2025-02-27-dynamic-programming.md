@@ -13,9 +13,9 @@ top:
   1. Characterise the structure of an optimal solution.
   2. Recursively define the value of an optimal solution. 
   3. Compute the value of an optimal solution, typically in a bottom-up fashion.
-  4. Construct an optimal solutino from computed information.
+  4. Construct an optimal solution from computed information.
 
-> Step 1-3 form the basis of a dynamic-programming solutin to a problem. If you need only the value of an optimal solution, and not the solution itself, then you can omit step 4. When you do perform step 4, it often pays to maintain additional information  during step 3 so that you can easily construct an optimal solution.
+> Step 1-3 form the basis of a dynamic-programming solution to a problem. If you need only the value of an optimal solution, and not the solution itself, then you can omit step 4. When you do perform step 4, it often pays to maintain additional information  during step 3 so that you can easily construct an optimal solution.
 
 ---
 ## 14.1 Rod cutting 

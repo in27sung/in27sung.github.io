@@ -30,11 +30,14 @@ What are algorithms? Why is the study of algorithms worthwhile? What is the role
 - Determine the shortest route from one intersection to another.
 
 ### Data structures:
-- is a way to store and organise data in orser to facilitate access and modifications.
+- A data structure is a way to store and organise data in order to facilitate access and modifications.
 - Using the appropriate data structure or structures is an important part of algorithm design.
 
 ### Hard problmes
-- No one knows whether efficient algorithms exist for **NP-Complete** problmes.
+
+**Why are NP-complte problems intersting?**
+
+- Although no efficient algorithm for an NP-comple problem has ever been found, nobody has ever proven that an efficient algorithm for one cannot exsit.
 - NP-Complete problems has the remarkable property that if an efficient algorithm exists for any one of them, then efficient algorithms exist for all of them.
 - Computer scientists are intrigued by how a small change to the problem statement can cause a big change to the efficiency of the best known algorithm.
 - To reduce costs, the company wants to select an order of delivery stops that yields the lowest overall distance traveled by each truck. e.g.'traveling-salesperson problem, it is NP-complete
@@ -54,7 +57,7 @@ What are algorithms? Why is the study of algorithms worthwhile? What is the role
 ### Algorithms and other technologies:
 - Total system performance depends on choosing efficient algorithms as much as on choosing fast hardware
   - advanced computer architectures and fabrication technologies,
-  - eay-to-use, intutitive, graphical user interfaces (GUIs),
+  - easy-to-use, intuitive, graphical user interfaces (GUIs),
   - object-oriented systems,
   - integrated web technologies,
   - fast networking, both wired and wireless,
@@ -65,8 +68,10 @@ What are algorithms? Why is the study of algorithms worthwhile? What is the role
   - The design of any GUI relies on algorithms.
   - Routing in networks relies heavily on algorithms.
   - Then it was processed by a compiler, interpreter, or assembler, all of which make extensive use of algorithms.
-- **Machine learning** can be thought of as a method for performing algorithmic tasks without explicitly designing an algorithm, but instead inferring pattens from data and thereby automatically learning a solution.
-- **Data science** is an interdisciplinary field with the goal of extracting knowledge and insigts from strucured and unstructured data.
-- It is at larger problem sizes that the differences in efficiency bewteen algorithms become particularly prominent.
-- some problems are computationally hard(e.g., NP-complete), while others are solvable efficiently.
-- Algorithms procide structure to problem-solving and help assess what is computable.
+- **Machine learning:**
+  - can be thought of as a method for performing algorithmic tasks without explicitly designing an algorithm, but instead inferring pattens from data and thereby automatically learning a solution.
+  - is itself a collection of algorithms, jus under a different name.
+  - are mainly for problems for which we as humans, do not really nuderstand what the right algoriths is.
+- **Data science:** 
+  - is an interdisciplinary field with the goal of extracting knowledge and insights from strucured and unstructured data.
+  - uses methods from statistics, computer science, and optimisation. 

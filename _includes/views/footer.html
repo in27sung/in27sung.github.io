@@ -2,20 +2,294 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
+    <!-- 웨이브 효과 상단 -->
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,53.3C672,53,768,75,864,85.3C960,96,1056,96,1152,85.3C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" 
+        fill="#2c3e50" fill-opacity="1"></path>
+      </svg>
+    </div>
+    
     <div class="site-footer-inner">
-        {%- assign currentYear = 'now' | date: "%Y" -%}
-        {%- assign copyright = site.copyright
-            | replace: '{currentYear}', currentYear
-            | replace: '{author}', site.author
-            | replace: '(c)', '&copy;'
-            | replace: '(p)', '℗'
-            | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
-        -%}
-      <div>{{ copyright }}</div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+      <div class="footer-grid">
+        <!-- 첫 번째 열: 사이트 정보 -->
+        <div class="footer-col footer-about">
+          <h3 class="footer-heading">About This Blog</h3>
+          <p>A space for documenting a developer’s learning journey in data science, AI, and algorithms.</p>
+          <div class="footer-social">
+            <a href="https://github.com/in27sung" title="Github" class="social-link">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="LinkedIn" class="social-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="Twitter" class="social-link">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="Kaggle" class="social-link">
+              <i class="fab fa-kaggle" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- 두 번째 열: 카테고리 -->
+        <div class="footer-col footer-categories">
+          <h3 class="footer-heading">카테고리</h3>
+          <ul class="footer-list">
+            <li><a href="#">Data Sience</a></li>
+            <li><a href="#">Machine Learning/AI</a></li>
+            <li><a href="#">Algorithm</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">TIL(Today I Learned)</a></li>
+          </ul>
+        </div>
+        
+        <!-- 세 번째 열: 최근 포스트 -->
+        <div class="footer-col footer-recent-posts">
+          <h3 class="footer-heading">최근 포스트</h3>
+          <ul class="footer-list">
+            {% for post in site.posts limit:4 %}
+              <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          {{ copyright }} <span class="data-year">{{ 'now' | date: "%Y" }}</span>
+        </div>
+        <div class="footer-powered">
+          <span class="footer-tech-icon"><i class="fas fa-code"></i></span>
+          Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="https://jekyllrb.com/">Jekyll</a> 
+          <span class="footer-separator">&</span>
+          <a title="Yat, yet another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>
+        </div>
+        <div class="footer-col rss-subscribe">
+          <a href="{{ "/feed.xml" | relative_url }}">
+            <i class="fas fa-rss"></i> RSS
+          </a>
+        </div>
+      </div>
+      
+      <!-- 데이터 기반 장식 요소 -->
+      <div class="footer-decoration">
+        <div class="data-particles">
+          <span class="data-particle">10101</span>
+          <span class="data-particle">11011</span>
+          <span class="data-particle">01001</span>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
+
+<!-- Font Awesome 추가 (아이콘용) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+  /* 푸터 기본 스타일 */
+  .site-footer {
+    background-color: #1a202c;
+    color: #edf2f7;
+    position: relative;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  
+  .site-footer a {
+    color: #63b3ed;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .site-footer a:hover {
+    color: #90cdf4;
+    text-decoration: underline;
+  }
+  
+  /* 웨이브 효과 */
+  .footer-wave {
+    display: block;
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  /* 푸터 내부 레이아웃 */
+  .site-footer-inner {
+    padding: 3rem 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 2rem;
+  }
+  
+  /* 푸터 제목 스타일 */
+  .footer-heading {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .footer-heading::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #3182ce, #63b3ed);
+    margin-top: 0.5rem;
+  }
+  
+  /* 푸터 리스트 스타일 */
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .footer-list li::before {
+    content: '▹';
+    color: #63b3ed;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* 최근 포스트 날짜 */
+  .post-date {
+    display: block;
+    font-size: 0.75rem;
+    color: #a0aec0;
+    margin-top: 0.25rem;
+  }
+  
+  /* 소셜 링크 */
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #2d3748;
+    color: #edf2f7 !important;
+    transition: all 0.3s !important;
+  }
+  
+  .social-link:hover {
+    background-color: #4299e1;
+    transform: translateY(-3px);
+    text-decoration: none !important;
+  }
+  
+  /* 푸터 하단 영역 */
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-separator {
+    margin: 0 0.5rem;
+    color: #4a5568;
+  }
+  
+  .footer-tech-icon {
+    margin-right: 0.5rem;
+    color: #4299e1;
+  }
+  
+  /* 데이터 장식 효과 */
+  .footer-decoration {
+    position: absolute;
+    right: 1rem;
+    bottom: 6rem;
+    opacity: 0.8;
+    pointer-events: auto;
+  }
+  
+  .data-particles {
+    position: relative;
+    height: 100px;
+  }
+  
+  .data-particle {
+    position: absolute;
+    font-family: monospace;
+    font-size: 3rem;
+    color: #fff;
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  .data-particle:nth-child(1) {
+    right: 5%;
+    bottom: 10%;
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  
+  .data-particle:nth-child(2) {
+    right: 15%;
+    bottom: 40%;
+    animation-delay: 2s;
+    animation-duration: 18s;
+  }
+  
+  .data-particle:nth-child(3) {
+    right: 25%;
+    bottom: 20%;
+    animation-delay: 4s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+      opacity: 0.5;
+    }
+  }
+  
+  /* 반응형 조정 */
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    
+    .footer-wave {
+      top: -80px;
+    }
+  }
+</style>

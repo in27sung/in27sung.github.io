@@ -146,6 +146,7 @@ html {
     position: absolute;
     top: 0;
     text-align: left;
+    align-self: anchor-center;
 
     label[for="nav-trigger"] {
       display: block;

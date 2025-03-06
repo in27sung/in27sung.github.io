@@ -4,7 +4,7 @@
   <div class="wrapper">
     <!-- 웨이브 효과 상단 -->
     <div class="footer-wave">
-      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,53.3C672,53,768,75,864,85.3C960,96,1056,96,1152,85.3C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" 
         fill="#2c3e50" fill-opacity="1"></path>
       </svg>
@@ -113,13 +113,28 @@
   
   /* 웨이브 효과 */
   .footer-wave {
-    display: block;
     position: absolute;
-    top: -120px;
+    bottom: 100%; /* 푸터 상단에 항상 붙도록 설정 */
     left: 0;
     width: 100%;
-    overflow: hidden;
+    height: 120px; /* 고정 높이 설정 */
     line-height: 0;
+    margin-bottom: -1px; /* 갭 방지를 위한 미세 조정 */
+  }
+
+  .footer-wave svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .footer-decoration {
+    position: absolute;
+    right: 1rem;
+    bottom: 6rem;
+    opacity: 0.08; /* 불투명도 약간 낮춤 */
+    pointer-events: none; /* 클릭 이벤트 방지 */
+    z-index: 1; /* 다른 요소보다 앞에 표시 */
   }
   
   /* 푸터 내부 레이아웃 */
@@ -289,7 +304,7 @@
     }
     
     .footer-wave {
-      top: -80px;
+      height: 60px; /* 모바일에서 웨이브 높이만 조정 */
     }
   }
 </style>

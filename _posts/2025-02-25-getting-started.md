@@ -2,6 +2,7 @@
 layout: post
 title: Chapter2 Getting Started
 subtitle: Introduction to algorithm
+author: Insung
 excerpt_image: https://github.com/user-attachments/assets/34172b0d-4abd-4f10-80f1-758d9cd140df
 categories: Algorithm
 tags: [algorithm]

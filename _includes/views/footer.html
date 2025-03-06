@@ -17,10 +17,10 @@
           <h3 class="footer-heading">About This Blog</h3>
           <p>A space for documenting a developer’s learning journey in data science, AI, and algorithms.</p>
           <div class="footer-social">
-            <a href="https://github.com/in27sung" title="Github" class="social-link">
+            <a href="https://github.com/in27sung" target="_blank" title="Github" class="social-link">
               <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-            <a href="#" title="LinkedIn" class="social-link">
+            <a href="https://www.linkedin.com/in/insung-hwang-104969244" target="_blank" title="LinkedIn" class="social-link">
               <i class="fab fa-linkedin" aria-hidden="true"></i>
             </a>
             <a href="#" title="Twitter" class="social-link">
@@ -51,7 +51,7 @@
             {% for post in site.posts limit:4 %}
               <li>
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                <span class="post-footer-date">{{ post.date | date: "%Y-%m-%d" }}</span>
               </li>
             {% endfor %}
           </ul>
@@ -190,7 +190,7 @@
   }
   
   /* 최근 포스트 날짜 */
-  .post-date {
+  .post-footer-date {
     display: block;
     font-size: 0.75rem;
     color: #a0aec0;

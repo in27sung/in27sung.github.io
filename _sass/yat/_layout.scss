@@ -115,10 +115,9 @@ html {
 
 .site-nav {
   @include relative-font-size(1.125);
-  line-height: $header-height;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 1.2em;
 
   .nav-trigger {
     display: none;
@@ -143,10 +142,6 @@ html {
   }
 
   @include media-query($on-laptop) {
-    position: absolute;
-    top: 0;
-    text-align: left;
-    align-self: anchor-center;
 
     label[for="nav-trigger"] {
       display: block;
@@ -168,6 +163,7 @@ html {
     input ~ .trigger {
       clear: both;
       display: none;
+      margin-top: 3em;
       border-radius: 3px;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
     }

@@ -116,6 +116,12 @@ body {
   background-color: darken($theme-color, 5%) !important;
 }
 
+.ct-language i {
+  margin-right: 5px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
 .ct-language-dropdown {
   overflow: hidden;
   max-height: 0;
@@ -125,7 +131,7 @@ body {
   background-color: lighten($theme-color, 5%);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  width: 100px;
+  width: 4em;
   text-align: center;
   margin-top: 0;
   z-index: 200;
@@ -136,11 +142,11 @@ body {
     padding: 5px;
 
     &:first-child {
-      padding-top: 12px;
+      // padding-top: 12px;
     }
 
     &:last-child {
-      padding-bottom: 12px;
+      // padding-bottom: 12px;
     }
 
     &:not(:last-child) {
@@ -173,7 +179,7 @@ body {
 .ct-language {
   display: inline-block;
   position: relative;
-  background-color: #fefefe2b;
+  // background-color: #fefefe2b;
   padding: 3px 10px;
   border-radius: 3px;
 
@@ -189,7 +195,7 @@ body {
   }
 
   &:before {
-    content: "\f1ab  \f0d7";
+    // content: "\f1ab  \f0d7";
     font-family: FontAwesome;
   }
 }

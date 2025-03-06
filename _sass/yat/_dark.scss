@@ -48,12 +48,12 @@ html[data-theme="dark"]  {
   }
 
   .site-header {
-    background-color: #090909;
+    // background-color: #090909;
 
     .site-brand {
       .site-brand-inner {
         &, &:visited {
-          color: #f8f8f8;
+          // color: #f8f8f8;
         }
       }
     }
@@ -203,7 +203,26 @@ html[data-theme="dark"]  {
 
   a:visited .post-badges .post-badge.badge-new {
     display: none;
-    background-color: $dark-background-color;
+    // background-color: $dark-background-color;
+    background-color: #ff4e00;   
+  }
+}
+
+.skill-category {
+  .skill-category-title {
+    color: #ddd;
+  }
+
+  .skill-category-content {
+    .skill-item {
+      background-color: #333;
+      border: 1px solid #555;
+      color: #aaa;
+
+      &:hover {
+        background-color: #2d2d2d;
+      }
+    }
   }
 }
 

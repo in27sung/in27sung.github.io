@@ -5,7 +5,7 @@ subtitle: Project Introduction
 author: Insung
 categories: Project
 banner:
-  video: /assets/videos/project1.mp4
+  video: https://github.com/user-attachments/assets/a35cc1ae-2eb4-43e0-89c6-f0daba9a7e5d
   loop: true
   volume: 0.8
   start_at: 8.5

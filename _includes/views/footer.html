@@ -1,5 +1,5 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
 
   <div class="wrapper">
     <!-- 웨이브 효과 상단 -->
@@ -34,19 +34,19 @@
         
         <!-- 두 번째 열: 카테고리 -->
         <div class="footer-col footer-categories">
-          <h3 class="footer-heading">카테고리</h3>
+          <h3 class="footer-heading">Categories</h3>
           <ul class="footer-list">
             <li><a href="#">Data Sience</a></li>
             <li><a href="#">Machine Learning/AI</a></li>
-            <li><a href="#">Algorithm</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="/categories.html#h-Algorithm">Algorithm</a></li>
+            <li><a href="/categories.html#h-Algorithm">Projects</a></li>
             <li><a href="#">TIL(Today I Learned)</a></li>
           </ul>
         </div>
         
-        <!-- 세 번째 열: 최근 포스트 -->
+        <!-- 세 번째 열: Recent Posts -->
         <div class="footer-col footer-recent-posts">
-          <h3 class="footer-heading">최근 포스트</h3>
+          <h3 class="footer-heading">Recent Posts</h3>
           <ul class="footer-list">
             {% for post in site.posts limit:4 %}
               <li>
@@ -60,7 +60,15 @@
       
       <div class="footer-bottom">
         <div class="footer-copyright">
-          {{ copyright }} <span class="data-year">{{ 'now' | date: "%Y" }}</span>
+          {%- assign currentYear = 'now' | date: "%Y" -%}
+          {%- assign copyright = site.copyright
+              | replace: '{currentYear}', currentYear
+              | replace: '{author}', site.author
+              | replace: '(c)', '&copy;'
+              | replace: '(p)', '℗'
+              | replace: '(cleft)', '<span class="copyright">&copy;</span>'
+          -%}
+          <div>{{ copyright | replace: '. All', '.<br>All' }}</div>
         </div>
         <div class="footer-powered">
           <span class="footer-tech-icon"><i class="fas fa-code"></i></span>
@@ -69,7 +77,7 @@
           <a title="Yat, yet another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>
         </div>
         <div class="footer-col rss-subscribe">
-          <a href="{{ "/feed.xml" | relative_url }}">
+          <a href="{{ '/feed.xml' | relative_url }}">
             <i class="fas fa-rss"></i> RSS
           </a>
         </div>

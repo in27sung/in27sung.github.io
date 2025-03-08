@@ -21,9 +21,9 @@ label, .toggle {
 
 label {
   display: block;
-  background-color: rgba(120, 120, 120, 0.15);
+  background-color: rgba(120, 120, 120, 0.25);
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   height: 76%;
   position: relative;
 }
@@ -40,7 +40,7 @@ label {
 
 #theme-switch:checked + label .toggle {
   transform: translateX(100%); /* Moves the toggle to the right when checked */
-  background-color: #333; /* Dark mode background color */
+  background-color: #222; /* Dark mode background color */
 }
 
 #theme-switch:not(:checked) + label .toggle {
@@ -51,7 +51,7 @@ label {
 .names {
   font-size: 1em;
   font-weight: bolder;
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@ label {
 .names p {
   margin-bottom: 0;
   line-height: 1em;
-  opacity: 0.5;
+  opacity: 0.8;
   margin-top: 0;
   font-size: 0.85em;
 }
@@ -96,15 +96,8 @@ label .dark {
 .theme-toggle .names .light svg,
 .theme-toggle .names .dark svg {
   width: 1.6rem;
-  height: 1.4rem;
   margin: 1px;
-}
-
-/* 반응형 스타일 */
-@media (max-width: 1024px) {
-  .theme-toggle {
-    margin-right: 35px;
-  }
+  margin-left: 3px;
 }
 
 @media (max-width: 600px) {

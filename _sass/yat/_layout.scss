@@ -19,6 +19,7 @@ html {
         .site-brand-inner, .page-link {
           color: #fff;
           transition: 0.1s color;
+          padding: 0;
         }
 
         @include media-query($on-laptop) {
@@ -108,13 +109,14 @@ html {
     font-weight: $base-font-weight;
     letter-spacing: -1px;
     transition: 0.1s filter color;
+    padding: 0;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.4);
     }
 
     &, &:visited {
-      // color: $header-text-color;
+      color: #fbbf24;
     }
 
     .site-favicon {
@@ -133,7 +135,7 @@ html {
   @include relative-font-size(1.125);
   position: absolute;
   right: 0;
-  top: 1em;
+  top: 0.7em;
 
   .nav-trigger {
     display: none;

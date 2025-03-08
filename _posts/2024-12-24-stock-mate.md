@@ -130,4 +130,6 @@ sidebar: []
 - **Password**: 1234
 
 ## 프로젝트 링크  
-<a href="http://c7d2408t1p1.itwillbs.com" target="_blank" rel="noreferrer">Stock Mate</a>
+**URL:** <a href="http://c7d2408t1p1.itwillbs.com" target="_blank" rel="noreferrer">Stock Mate</a>
+
+**Github:** <a href="https://github.com/in27sung/stock-mate" target="_blank" ref="noreferrer">Source code</a>

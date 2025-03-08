@@ -123,10 +123,10 @@ translate_langs:
 # You can choose a brand color
 # Default brand colors as below:
 # orangered: #ff5100
-# greatgold: #f2cb05
+greatgold: #f2cb05 
 # greenblue: #389092
 #
-# brand_color: orangered
+brand_color: greatgold
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -198,27 +198,27 @@ defaults:
 #   text_size: 350          # Words default size
 
 # Pagination setting
-# paginate: 5
+paginate: 5
 
 # Photo previewer settings (PhotoSwipe 5)
 # the options please refer to: https://photoswipe.com/options/
-# photo_previewer:
-#  gallery: "section.main"
-#  children: "a.photo-swipe"
-#  bgOpacity: 0.8
-#  padding:
-#    top: 20
-#    bottom: 40
-#    left: 100
-#    right: 100
+photo_previewer:
+ gallery: "section.main"
+ children: "a.photo-swipe"
+ bgOpacity: 0.8
+ padding:
+   top: 20
+   bottom: 40
+   left: 100
+   right: 100
 
 # Click to top settings
 click_to_top:
   light:
-    background_color: "#fbbf24"
+    background_color: "#f2cb05"
     color: "#fff"
   dark:
-    background_color: "#fbbf24"
+    background_color: "#f2cb05"
     color: "#0e0e0e"
 
 # Disqus comments

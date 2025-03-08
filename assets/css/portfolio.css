@@ -19,6 +19,7 @@
 
 /* ========== 기본 레이아웃 ========== */
 .portfolio-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;

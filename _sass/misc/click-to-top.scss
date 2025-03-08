@@ -3,11 +3,11 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  width: 64px;
-  height: 64px;
+  width: 54px;
+  height: 54px;
   border-radius: 32px;
-  right: 60px;
-  bottom: 48px;
+  right: 27px;
+  bottom: 27px;
   cursor: pointer;
   opacity: 0;
   transform: translateY(10px);
@@ -27,7 +27,7 @@
 }
 
 .click-to-top.show {
-  opacity: 1;
+  opacity: 0.8;
   transform: translateY(0);
 }
 

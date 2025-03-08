@@ -72,12 +72,15 @@
 
 /* ========== 섹션 공통 스타일 ========== */
 .portfolio-section {
-  margin-bottom: 4rem;
+  margin-top: 5rem;  /* Top spacing between sections */
+  margin-bottom: 5rem;  /* Bottom spacing between sections */
+  padding: 2rem 0;  /* Internal padding within sections */
 }
 
 .portfolio-section h2 {
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   color: white;
+  margin-bottom: 3rem;  /* More space below section titles */
   padding: 0.5rem 1rem;
   border-radius: 8px;
   display: inline-block;
@@ -689,4 +692,12 @@ li {
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+#intro, #skills, #education, #projects, #contact {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }

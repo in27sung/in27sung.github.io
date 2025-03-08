@@ -26,7 +26,7 @@
 
 title: The Data Explorer
 email: in27sung@gmail.com
-author: Insung Hwang
+author: Insung
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -40,7 +40,7 @@ author: Insung Hwang
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Copyright (cleft) {currentYear} {author}. All rights reserved."
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -213,13 +213,13 @@ defaults:
 #    right: 100
 
 # Click to top settings
-# click_to_top:
-#   light:
-#     background_color: "white"
-#     color: "#454545"
-#   dark:
-#     background_color: "#34323d"
-#     color: "#bbb"
+click_to_top:
+  light:
+    background_color: "#fbbf24"
+    color: "#fff"
+  dark:
+    background_color: "#fbbf24"
+    color: "#0e0e0e"
 
 # Disqus comments
 # disqus:

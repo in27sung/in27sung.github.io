@@ -37,13 +37,13 @@ sidebar: []
   기존 5분에서 1분으로 입출고 처리 시간을 **80% 단축**하였습니다.
   
 - **재고 정확도 향상**:  
-  수동 데이터 입력 및 오류로 인해 재고 정확도가 90%였으나, **OCR** 기술 도입 후 **99.9%**로 **향상**되었습니다.
+  수동 데이터 입력 및 오류로 인해 재고 정확도가 90%였으나, OCR 기술 도입 후 **99.9%**로 **향상**되었습니다.
   
 - **입출고 오류 감소**:  
   기존 방식에서 발생하던 입출고 오류가 **90% 감소**하였습니다.
 
 - **재고 관리 실시간 반영**:  
-  기존에는 재고 현황을 반영하는 데 2시간 이상 소요되었으나, **OCR** 스캔 후 **즉시** 데이터베이스에 반영되어 현재 **가용 수량**을 정확히 파악할 수 있게 되었습니다.
+  기존에는 재고 현황을 반영하는 데 2시간 이상 소요되었으나, OCR 스캔 후 **즉시** 데이터베이스에 반영되어 현재 **가용 수량**을 정확히 파악할 수 있게 되었습니다.
 
 ### 2. **공간 효율성 극대화**
 
@@ -113,15 +113,16 @@ sidebar: []
 <a href="https://github.com/" target="_blank" rel="noreferrer">
   <img style="float:left; margin-right:5px;" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbxixOB%2FbtsDrkG3rTF%2Fd7wMGaUhBtJ7srWtBuGaxk%2Fimg.png" alt="github" width="40" height="40"/>
 </a>
-<a href="https://postman.com" target="_blank" rel="noreferrer"> 
-  <img style="float:left; margin-right:5px;" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+<a href="https://tomcat.apache.org/" target="_blank" rel="noreferrer">
+  <img style="float:left; margin-right:5px;" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrbPBh%2FbtsDqnqHRBc%2FKsGY3yKAJS4EAIWm5gjMik%2Fimg.png" alt="tomcat" width="40" height="40"/>
 </a>
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
   <img style="float:left; margin-right:5px;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
 </a>
-<a href="https://tomcat.apache.org/" target="_blank" rel="noreferrer">
-  <img style="float:left; margin-right:5px;" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrbPBh%2FbtsDqnqHRBc%2FKsGY3yKAJS4EAIWm5gjMik%2Fimg.png" alt="tomcat" width="40" height="40"/>
-</a><br><br>
+<a href="https://postman.com" target="_blank" rel="noreferrer"> 
+  <img style="float:left; margin-right:5px;" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+</a>
+<br><br>
 
 ## 로그인 정보
 

@@ -6,6 +6,11 @@
   {%- seo -%}
   <link rel="icon" href="{{ site.favicon }}">
   <link rel="canonical" href="{{ site.url }}">
+  
+  {%- if jekyll.environment == 'production' -%}
+  {% include adsense.html %}
+  {%- endif -%}
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">

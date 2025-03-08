@@ -69,6 +69,13 @@ yat:
 google_analytics: G-E0LV44E73F
 enableDNT: "false"
 
+# Google AdSense
+# adsense:
+#   enabled: true
+#   adsense_id: "ca-pub-XXXXXXXX"  # AdSense 퍼블리셔 ID
+#   sidebar_ad: true
+#   article_ad: true
+
 # If you want to generate website sitemap, you can set true
 # sitemap: false
 
@@ -249,3 +256,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+
+# Include files that begin with underscore and specific files like ads.txt
+include: ["ads.txt"]

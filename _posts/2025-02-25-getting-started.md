@@ -8,7 +8,6 @@ categories: Algorithm
 tags: [algorithm]
 top: 
 ---
-
 This chapter will familiarise you with the framework we'll use throughout the book to think about the design and analysis of algorithms. We'll begin by examining the insertion sort algorithm to solve the sorting problem. We'll specify algorithms using a pseudocode that should be understandable to you if you have done computer programming. We'll see why insertion sort correctly sorts and analyse its running time. The analysis introduces a notation that describes how running time increases with the number of times to be sorted. Following a discussion of insertion sort, we'll use a method called divide-and-conquer to develop a sorting algorithm called marge sort. We'll end with an analysis of merge sort's running time.
 
 ---
@@ -93,14 +92,96 @@ n = len(A)
 insertion_sort(A, n)
 print(A) # Output: [1, 2, 3, 4, 5, 6]
 ```
+### Exercises 
+**2.1-1**
+Using Figure 2.2 as a model, illustrate the operation of INSERTION-SORT on an array initially containing the sequence `[31, 41, 59, 26, 41, 58]`
+
+**Step-by-step Execution**
+
+| Step | Key  | Array State                |
+|------|------|----------------------------|
+| 1    | 41   | **[31, 41,** 59, 26, 41, 58] |
+| 2    | 59   | **[31, 41, 59,** 26, 41, 58] |
+| 3    | 26   | **[26, 31, 41, 59,** 41, 58] |
+| 4    | 41   | **[26, 31, 41, 41,** 59, 58] |
+| 5    | 58   | **[26, 31, 41, 41, 58,** 59] |
+
+**Final Sorted Array**
+`[26, 31, 41, 41, 58, 59]`
+
+**2.1-2**
+Consider the procedure SUM-ARRAY on the facing page. It computes the sum of the $n$ numbers in array $A[1:n]$. State a loop invariant for this procedure, and use its initialisation, maintenance, and termination properties to show that the SUM-ARRAY procedure returns the sum of the numbers in $A[1:n]$.
 
 ---
 
 ## 2.2 Analysing algorithms
 
-<span style="color:blue">*Analysing* </span> an algorithm has come to mean predicting the resources that the algorithm requries. 
+<span style="color:blue">*Analysing*</span> an algorithm has come to mean predicting the resources that the algorithm requries. Most often, you will want to measure computational time. If you analyse several candidate algorithms for a problem, you can identify the most efficient one. Most of this book assumes a generic one-processor, <span style="color:blue">*random-access machine(RAM)*</span> model of computation as the implementation technology, with the understanding that algorithms are implemented as computer programs. 
 
 
+### Analysis of insertion sort
+How long does the INSERTION-SORT procedure take? One way to tell would be for you to run it on your computer and time how long it takes to run. Of course, you'd first have to implement it in a real programming language, since you cannot run our pseudocode directly. What would such a timing test tell you? If you run insertion osrt again on your computer with the same input, you might even get a different timing result. 
+**How do we analyse insertion sort?** First, let's acknowledge that the runnig time depends on the input. To do so, we nned to define the erms "runnning time" and "input size" more carefully. We also need to be clear about whether we are discussing the running time for an input that elicits the worst-case behaviour, the best-case behaviour, or some other case. The bse notion for <span style="color:blue">*input size*</span> depends on the problem being studided. The <span style="color:blue">*running time*</span> of an algorithm on a particular input is the number of instructions and data accesses executed. 
+
+### Worst-case and Average-case Analysis
+
+In the analysis of **insertion sort**, we considered both the **best case** (when the array is already sorted) and the **worst case** (when the array is sorted in reverse order). However, for most algorithms in this book, we focus on the <span style="color:blue">*worst-case running time*</span>, which is the longest running time for any input of size $n$. Here are three reasons why:
+
+1. **Guarantee of Upper Bound**:
+   - The worst-case running time provides an upper bound for the algorithm's running time on any input. Knowing this guarantees that the algorithm will not take longer than this time. This is especially important in **real-time computing**, where operations must meet strict deadlines.
+
+2. **Frequent Occurrence of Worst Case**:
+   - For some algorithms, the worst-case scenario happens frequently. For example, in searching a database, the worst-case often occurs when the sought information is not present. In such cases, the worst-case analysis helps to predict performance even when no specific data is available.
+
+3. **Average-case Analysis**:
+   - The **average-case** running time for some algorithms, like insertion sort, is often as bad as the worst-case. For insertion sort, when running on an array of \(n\) randomly chosen numbers, each element is compared with half of the elements in the subarray. Therefore, the average comparison time for each insertion is about \(i/2\), leading to an average-case time complexity that is quadratic (\(O(n^2)\)), similar to the worst-case.
+
+**Average-case Analysis and Randomized Algorithms**
+- While the worst-case analysis is often more practical, we also sometimes need to consider the <span style="color:blue">*average-case*</span> running time, especially for probabilistic analysis.
+- <span style="color:blue">*Probabilistic analysis*</span> can be applied to various algorithms, where inputs are assumed to be random or equally likely. This can yield an **expected running time**.
+- In cases where it is unclear what constitutes an "average" input, <span style="color:blue">*randomized algorithms*</span> can be used to generate random inputs and facilitate probabilistic analysis. This approach will be explored in more detail in Chapter 5 and other chapters.
+
+### Order of growth 
+
+In the analysis of the **INSERTION-SORT** procedure, we used simplifying abstractions to focus on the **order of growth** of the running time rather than the actual statement costs. Here are the key points:
+
+1. **Simplifying Assumptions**:
+   - We ignored the actual cost of each statement and represented these costs using constants, like $c_k$.
+   - The best-case and worst-case running times were expressed in terms of constants (e.g., $an + b$ for best case and $an^2 + bn + c$ for worst case).
+   
+2. **Focus on the Rate of Growth**:
+   - The primary focus is on the **rate of growth** (order of growth) of the running time.
+   - For large $n$, the **leading term** in the running time formula is the most important. The lower-order terms are insignificant for large inputs.
+   - We ignore constants and lower-order terms to simplify analysis.
+
+3. **Example of Dominant Term**:
+   - Consider an algorithm with a running time formula like $\frac{n^2}{100} + 100n + 17$. As $n$ becomes large (e.g., $n > 10,000$), the $\frac{n^2}{100}$ term dominates over the $100n$ term, even though its coefficient is much smaller.
+
+4. **Big Theta ($\Theta$) Notation**:
+   - The **order of growth** is represented by **Big Theta ($\Theta$)** notation, which ignores constants and lower-order terms.
+   - **Worst-case** running time of **insertion sort** is $\Theta(n^2)$, and the **best-case** is $\Theta(n)$.
+   - $\Theta(n^2)$ means the running time is **roughly proportional** to $n^2$ for large $n$, and $\Theta(n)$ means the running time is **roughly proportional** to $n$ for large $n$.
+
+5. **Efficiency and Order of Growth**:
+   - An algorithm with a **lower order of growth** in its worst-case running time is generally more efficient.
+   - Even though constant factors and lower-order terms can affect small input sizes, the algorithm with a smaller order of growth (e.g., $\Theta(n^2)$ vs $\Theta(n^3)$) will eventually outperform the other for large inputs.
+   - There exists a threshold $n_0$, such that for all $n \geq n_0$, the algorithm with $\Theta(n^2)$ will be faster than the one with $\Theta(n^3)$, regardless of constant factors.
+
+**INSERTION-SORT time complexity**
+1. **Worst Case ($\Theta(n^2)$)**:
+   - Occurs when the array is sorted in reverse order, meaning every element has to be compared with all previous elements.
+   - In each insertion, all previous elements are compared.
+   - The runing time is thus a <span style="color:blue">*quadratic function*</span> of $n$
+   - Time complexity: $T(n) = 1 + 2 + 3 + \dots + (n - 1) = \frac{n(n - 1)}{2} = \Theta(n^2)$
+
+2. **Best Case ($\Theta(n)$)**:
+   - Occurs when the array is already sorted in ascending order. In this case, each element is compared only once and no shifting is necessary.
+   - The runing time is thus a <span style="color:blue">*linear function*</span> of $n$
+   - Time complexity: $T(n) = n - 1 = \Theta(n)$
+
+3. **Average Case ($\Theta(n^2)$)**:
+   - In the average case, the array is randomly shuffled, and each insertion will, on average, require half the comparisons.
+   - Time complexity: $T(n) = \Theta(n^2)$
 
 
 

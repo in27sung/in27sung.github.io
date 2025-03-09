@@ -701,3 +701,46 @@ li {
   justify-content: flex-start;
   box-sizing: border-box;
 }
+
+.form-submit-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.spinner {
+  margin-left: 8px;
+}
+
+#form-status {
+  border-left: 3px solid;
+  flex: 1;
+}
+
+#form-status.success {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: #4CAF50;
+  color: #2E7D32;
+}
+
+#form-status.error {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-color: #F44336;
+  color: #C62828;
+}
+
+#form-status.sending {
+  background-color: rgba(3, 169, 244, 0.1);
+  border-color: #03A9F4;
+  color: #0277BD;
+}

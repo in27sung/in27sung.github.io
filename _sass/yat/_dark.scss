@@ -69,7 +69,7 @@ html[data-theme="dark"]  {
     }
 
     .ct-language-selected, .ct-language-dropdown li:hover {
-      background-color: #222 !important;
+      background-color: #333 !important;
     }
 
     @include media-query($on-laptop) {

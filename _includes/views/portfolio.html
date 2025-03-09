@@ -357,7 +357,7 @@
         <div class="contact-form" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom">
             <h3>Contact me</h3>
-            <form>
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -370,10 +370,24 @@
                     <label for="message">Contents</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send</button>
+                <div class="form-submit-container">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send</span>
+                        <span class="spinner" style="display:none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                    <div id="form-status"
+                        style="margin-left: 10px; display: none; padding: 6px 12px; border-radius: 4px; font-size: 14px; transition: all 0.3s ease;">
+                    </div>
+                </div>
             </form>
         </div>
     </section>
+
+    <!-- Add EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
@@ -388,6 +402,206 @@
                 mirror: true,                      // Elements animate out when scrolling past them
                 throttleDelay: 99                  // Delay for performance optimization
             });
+
+            // Initialize EmailJS with your user ID
+            emailjs.init("zINHuxP_h_xBN987c");
+
+            const form = document.getElementById('contact-form');
+            if (form) {
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    // Show loading state (only with spinner, no toast)
+                    const btn = document.querySelector('.submit-btn');
+                    const btnText = document.querySelector('.btn-text');
+                    const spinner = document.querySelector('.spinner');
+
+                    btn.disabled = true;
+                    btnText.style.opacity = "0.7";
+                    spinner.style.display = "inline-block";
+
+                    const templateParams = {
+                        from_name: document.getElementById('name').value,
+                        from_email: document.getElementById('email').value,
+                        message: document.getElementById('message').value,
+                        date: new Date().toLocaleString(),
+                        reply_to: document.getElementById('email').value
+                    };
+
+                    emailjs.send('service_rwb7ilr', 'template_1d45ogq', templateParams)
+                        .then(function (response) {
+                            // Reset button state
+                            btn.disabled = false;
+                            btnText.style.opacity = "1";
+                            spinner.style.display = "none";
+
+                            // Show success toast (no need to remove loading toast)
+                            showToast('Message sent successfully!', 'success');
+                            form.reset();
+                        }, function (error) {
+                            // Reset button state
+                            btn.disabled = false;
+                            btnText.style.opacity = "1";
+                            spinner.style.display = "none";
+
+                            // Show error toast (no need to remove loading toast)
+                            showToast('Failed to send message. Please try again.', 'error');
+                        });
+                });
+            }
+            // First, add the toast container to the DOM
+            const toastContainer = document.createElement('div');
+            toastContainer.className = 'toast-container';
+            document.body.appendChild(toastContainer);
+
+            // Add the CSS for the toast notifications
+            const style = document.createElement('style');
+            style.textContent = `
+            .toast-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 350px;
+            }
+
+            .toast {
+            padding: 14px 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            color: white;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            pointer-events: auto;
+            }
+
+            .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+            }
+
+            .toast.hide {
+            opacity: 0;
+            transform: translateX(-100%);
+            }
+
+            .toast-success {
+            background: linear-gradient(135deg, #43c6ac, #28a745);
+            }
+
+            .toast-error {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            }
+
+            .toast-info {
+            background: linear-gradient(135deg, #2193b0, #6dd5ed);
+            }
+
+            .toast-icon {
+            margin-right: 12px;
+            font-size: 20px;
+            }
+
+            .toast-content {
+            flex-grow: 1;
+            }
+
+            .toast-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+            padding: 0;
+            line-height: 1;
+            margin-left: 10px;
+            }
+
+            .toast-close:hover {
+            opacity: 1;
+            }
+
+            @media (max-width: 480px) {
+            .toast-container {
+                left: 10px;
+                right: 10px;
+                max-width: calc(100% - 20px);
+            }
+            }
+            `;
+            document.head.appendChild(style);
+
+            // Add the toast function
+            function showToast(message, type = 'info', duration = 4000) {
+                const toast = document.createElement('div');
+                toast.className = `toast toast-${type}`;
+
+                let icon = '';
+                switch (type) {
+                    case 'success':
+                        icon = '<i class="fas fa-check-circle toast-icon"></i>';
+                        break;
+                    case 'error':
+                        icon = '<i class="fas fa-exclamation-circle toast-icon"></i>';
+                        break;
+                    default:
+                        icon = '<i class="fas fa-info-circle toast-icon"></i>';
+                }
+
+                toast.innerHTML = `
+                    ${icon}
+                    <div class="toast-content">${message}</div>
+                    <button class="toast-close" aria-label="Close notification">&times;</button>
+                `;
+
+                toastContainer.appendChild(toast);
+
+                // Force reflow to enable transition
+                toast.offsetHeight;
+
+                // Show the toast
+                setTimeout(() => {
+                    toast.classList.add('show');
+                }, 10);
+
+                // Handle close button
+                const closeButton = toast.querySelector('.toast-close');
+                closeButton.addEventListener('click', () => {
+                    removeToast(toast);
+                });
+
+                // Auto-dismiss
+                if (duration) {
+                    setTimeout(() => {
+                        removeToast(toast);
+                    }, duration);
+                }
+
+                return toast;
+            }
+
+            function removeToast(toast) {
+                toast.classList.add('hide');
+                toast.classList.remove('show');
+
+                // Remove from DOM after animation
+                setTimeout(() => {
+                    if (toast && toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 500);
+            }
+
             // 첫 번째 타이핑 효과 추가
             const typingElement1 = document.querySelector('.typing-text-1');
             const textToType1 = "I specialise in Python and have a strong interest in data science and AI, which I continuously study and refine.";

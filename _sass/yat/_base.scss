@@ -39,7 +39,7 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+/*p,*/ blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: divide($spacing-unit, 2);

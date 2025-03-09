@@ -377,16 +377,16 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
-                duration: 800,                     // 애니메이션 지속 시간
-                easing: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)', // 부드러운 이징
-                once: true,                        // 한 번만 실행
-                offset: 150,                       // 기본 오프셋 조정 (더 늦게 시작)
-                delay: 0,                          // 기본 딜레이는 0으로 설정
-                anchorPlacement: 'bottom-bottom',  // 요소 하단이 화면 하단에 도달할 때 시작
-                disable: 'mobile',                 // 모바일에서는 비활성화하여 성능 향상
-                startEvent: 'DOMContentLoaded',    // 페이지 로드 후 초기화
-                mirror: false,                     // 스크롤 시 요소가 다시 사라지지 않음
-                throttleDelay: 99                  // 성능 최적화
+                duration: 800,                     // Animation duration in milliseconds
+                easing: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)', // Smooth easing curve
+                once: false,                       // Animations repeat on each scroll
+                offset: 150,                       // Offset (in px) from original trigger point
+                delay: 0,                          // Default delay before animation starts
+                anchorPlacement: 'bottom-bottom',  // Trigger when bottom of element reaches bottom of window
+                // disable: 'mobile',              // Uncomment to disable on mobile devices for better performance
+                startEvent: 'DOMContentLoaded',    // Initialize after page content has fully loaded
+                mirror: true,                      // Elements animate out when scrolling past them
+                throttleDelay: 99                  // Delay for performance optimization
             });
             // 첫 번째 타이핑 효과 추가
             const typingElement1 = document.querySelector('.typing-text-1');

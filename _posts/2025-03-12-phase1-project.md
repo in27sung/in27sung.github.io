@@ -82,4 +82,3 @@ sidebar: []
 🔜 **Develop Frontend to Display AI Predictions**
 
 📢 **Once today’s tasks are completed, we can move to database integration!** 🚀
-

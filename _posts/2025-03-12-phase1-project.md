@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phase 1 AI Powored Quantitative Investment System
+title: Phase 1-1 Implement OpenAI API-based stock prediction functionality in FastAPI
 subtitle: Software Requirements Specification (SRS)
 author: Insung
 categories: Project
@@ -21,7 +21,7 @@ top:
 sidebar: []
 ---
 
-**📌 Phase 1 - Detailed Plan**
+**📌 Phase 1 - Implement OpenAI API-based stock prediction functionality in FastAPI**
 
 ---
 

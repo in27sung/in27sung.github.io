@@ -75,7 +75,7 @@ sidebar: []
 
 ## **4. Next Steps**
 
-🔜 **Integrate PostgreSQL to Store Stock Data**
+🔜 **[Integrate PostgreSQL to Store Stock Data](/project/2025/03/13/Integrate-postgreSQL-database-to-store-stock-data.html)**
 
 🔜 **Enhance API Response with Data Formatting & Insights**
 

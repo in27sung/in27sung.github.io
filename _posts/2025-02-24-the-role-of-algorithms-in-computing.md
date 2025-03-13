@@ -35,11 +35,11 @@ What are algorithms? Why is the study of algorithms worthwhile? What is the role
 - A data structure is a way to store and organise data in order to facilitate access and modifications.
 - Using the appropriate data structure or structures is an important part of algorithm design.
 
-### Hard problmes
+### Hard problems
 
-**Why are NP-complte problems intersting?**
+**Why are NP-complete problems intersting?**
 
-- Although no efficient algorithm for an NP-comple problem has ever been found, nobody has ever proven that an efficient algorithm for one cannot exsit.
+- Although no efficient algorithm for an NP-complete problem has ever been found, nobody has ever proven that an efficient algorithm for one cannot exsit.
 - NP-Complete problems has the remarkable property that if an efficient algorithm exists for any one of them, then efficient algorithms exist for all of them.
 - Computer scientists are intrigued by how a small change to the problem statement can cause a big change to the efficiency of the best known algorithm.
 - To reduce costs, the company wants to select an order of delivery stops that yields the lowest overall distance traveled by each truck. e.g.'traveling-salesperson problem, it is NP-complete

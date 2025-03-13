@@ -80,7 +80,7 @@ sidebar: []
 
 ## **5. Next Steps After Database Integration**
 
-🔜 **Integration with AI Prediction Endpoint**
+🔜 **Enhance API Response with Data Formatting & Insights**
 
 🔜 **Frontend UI to Display Stored Data and Predictions**
 

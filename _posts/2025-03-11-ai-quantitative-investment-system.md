@@ -4,32 +4,19 @@ title: AI Powored Quantitative Investment System
 subtitle: Software Requirements Specification (SRS)
 author: Insung
 categories: Project
-banner:
-  video: 
-  loop: true
-  volume: 0.8
-  start_at: 8.5
-  image: 
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
-tags: project AI ML 
+tags: [Project, Artificial Intelligence, Machine Learning]
 top:
-sidebar: []
 ---
 
 **📌 AI-Powered Quantitative Investment System**
 
 ---
+## 1. Project Overview
 
-## **1. Project Overview**
-### **1.1 Project Name**  
+### 1.1 Project Name
 AI-Powered Quantitative Investment System
 
-### **1.2 Project Objective**  
+### 1.2 Project Objective*
 This project aims to develop a **quantitative investment system leveraging AI and data analysis to optimize stock market strategies**. The initial phase focuses on **stock price prediction using OpenAI API**, with a long-term goal of incorporating **machine learning (XGBoost, LSTM) models for automated investment strategies**.
 
 ---

@@ -4,21 +4,8 @@ title: Phase 1.3 Enhance API Response with Data Formatting & Insights
 subtitle: Software Requirements Specification (SRS)
 author: Insung
 categories: Project
-banner:
-  video: 
-  loop: true
-  volume: 0.8
-  start_at: 8.5
-  image: 
-  opacity: 0.618
-  background: "#000"
-  height: "100vh"
-  min_height: "38vh"
-  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
-  subheading_style: "color: gold"
-tags: project
+tags: [Project]
 top:
-sidebar: []
 ---
 
 ## 📌 Phase 1.3 - Enhance API Response with Data Formatting & Insights

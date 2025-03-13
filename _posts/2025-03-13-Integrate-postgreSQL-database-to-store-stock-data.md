@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phase 1-2 Integrate PostgreSQL Database to Store Stock Data
+title: Phase 1.2 Integrate PostgreSQL Database to Store Stock Data
 subtitle: Software Requirements Specification (SRS)
 author: Insung
 categories: Project
@@ -21,9 +21,7 @@ top:
 sidebar: []
 ---
 
----
-
-## **Phase 1 - Stock Database Integration Plan**
+**📌 Phase 1.2 - Stock Database Integration Plan**
 
 ---
 

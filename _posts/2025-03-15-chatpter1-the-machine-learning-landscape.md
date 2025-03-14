@@ -29,7 +29,7 @@ Your spam filter is a machine learning program that, given examples of spam emai
 
 ### Why Use Machine Learning?
 
-Consider how you would write a spam filter using traditional programming techniques (Figure 1-1):
+Consider how you would write a spam filter using traditional programming techniques ([Figure 1-1](https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff)):
 
 1. First you would examine what spam typically looks like. You might notice that some words or phrases (such as "4U", "credit card", "free", and "amazing") tend to come up a lot in the subject line. Perhaps you would also notice a few other patterns in the sender's name, the email's body, and other parts of the eamil.
 
@@ -37,9 +37,14 @@ Consider how you would write a spam filter using traditional programming techniq
 
 3. You would test your program and repeat steps 1 and 2 until it was good enough to launch.
 
-![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron](https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff)
+![Figure 1-1. The traditional approach](https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff)
 
+A rule-based spam filter becomes complex and hard to maintain due to numerous rules. In contrast, a machine learning-based filter automatically detects frequent spam patterns, making it shorter, easier to maintain, and more accurate.([Figure 1-2](https://github.com/user-attachments/assets/9b846ffc-d0a7-4a29-bf3c-41bafd5dec4f)).
 
-![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 2](https://github.com/user-attachments/assets/9b846ffc-d0a7-4a29-bf3c-41bafd5dec4f)
+![Figure 1-2. The machine learning approach](https://github.com/user-attachments/assets/9b846ffc-d0a7-4a29-bf3c-41bafd5dec4f)
 
-![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd)
+Spammers can bypass traditional rule-based spam filters by altering keywords (e.g., changing “4U” to “For U”), requiring constant manual updates. In contrast, a machine learning-based spam filter automatically detects new spam patterns based on user feedback and adapts without manual intervention.([Figure 1-3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd))
+
+![Figure 1-3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd)
+
+Machine learning is particularly useful for solving problems that are too complex for traditional rule-based approaches or lack a known algorithm. Speech recognition is a prime example—while a simple program might distinguish “one” and “two” using high-pitch detection, this method does not scale to thousands of words spoken by diverse individuals in various environments and languages. Instead, the most effective approach today is to develop a machine learning model that learns from large datasets of recorded speech, enabling it to generalise across different speakers and conditions.

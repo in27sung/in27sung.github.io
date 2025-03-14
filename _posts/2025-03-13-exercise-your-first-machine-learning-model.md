@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Your First Machine Learning Model"
-subtitle: "From Data to Predictions: Building Your First Decision Tree Model"
+subtitle: "Building your first model. Hurray!"
 author: Insung
 categories: [Data Science, Machine Learning]
 tags: [Data Science, Machine Learning]

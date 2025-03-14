@@ -3,8 +3,8 @@ layout: post
 title: "Model Validation"
 subtitle: "Measure the performance of your model, so you can test and compare alternatives."
 author: Insung
-categories: [Data Science, Machine Learning]
-tags: [Data Science, Machine Learning]
+categories: [Machine Learning]
+tags: [Machine Learning]
 top:
 ---
 

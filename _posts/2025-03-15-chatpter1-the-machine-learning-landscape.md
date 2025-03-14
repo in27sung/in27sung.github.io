@@ -37,5 +37,9 @@ Consider how you would write a spam filter using traditional programming techniq
 
 3. You would test your program and repeat steps 1 and 2 until it was good enough to launch.
 
-![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 2](https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff)
+![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron](https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff)
 
+
+![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 2](https://github.com/user-attachments/assets/9b846ffc-d0a7-4a29-bf3c-41bafd5dec4f)
+
+![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd)

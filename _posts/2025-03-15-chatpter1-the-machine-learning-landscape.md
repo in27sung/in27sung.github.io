@@ -49,5 +49,17 @@ Spammers can bypass traditional rule-based spam filters by altering keywords (e.
 
 Machine learning is particularly useful for solving problems that are too complex for traditional rule-based approaches or lack a known algorithm. Speech recognition is a prime example—while a simple program might distinguish “one” and “two” using high-pitch detection, this method does not scale to thousands of words spoken by diverse individuals in various environments and languages. Instead, the most effective approach today is to develop a machine learning model that learns from large datasets of recorded speech, enabling it to generalise across different speakers and conditions.
 
+Machine learning enables humans to gain insights by analysing what models have learned([figure 1-4](https://github.com/user-attachments/assets/7ff93963-9256-4482-acab-42f8d26f9440)), though this can be challenging for some models. For example, a trained spam filter can reveal key words or word combinations that strongly indicate spam, sometimes uncovering unexpected correlations or emerging trends. This process, known as **data mining**, is where machine learning excels, helping to identify hidden patterns in large datasets and leading to a deeper understanding of complex problems.
 
 ![Figure 1-4. Machine learning can help humans learn](https://github.com/user-attachments/assets/7ff93963-9256-4482-acab-42f8d26f9440)
+
+To summarise, machine learning is great for:
+- Problems for which existing colutions require a lot of fine-tuning or long lists for rules(a machine learning model can often simplofy code and perform better than the traditional approach)
+
+- Complex problems for which using a traditional approach yields no good solution (the best machine learning techniques can perhaps find a solution)
+
+- Fluctuating environments (a machine learning system can easily be retrained on new data, always keeping it up to date)
+
+- Getting insights about complex problems and large amounts of data
+
+### Examples of Applications

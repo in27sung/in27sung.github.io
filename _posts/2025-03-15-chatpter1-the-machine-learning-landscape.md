@@ -45,6 +45,9 @@ A rule-based spam filter becomes complex and hard to maintain due to numerous ru
 
 Spammers can bypass traditional rule-based spam filters by altering keywords (e.g., changing “4U” to “For U”), requiring constant manual updates. In contrast, a machine learning-based spam filter automatically detects new spam patterns based on user feedback and adapts without manual intervention.([Figure 1-3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd))
 
-![Figure 1-3](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd)
+![Figure 1-3. Automatically adapting to change](https://github.com/user-attachments/assets/b62c2d06-77ff-458b-9ace-b102c8abeabd)
 
 Machine learning is particularly useful for solving problems that are too complex for traditional rule-based approaches or lack a known algorithm. Speech recognition is a prime example—while a simple program might distinguish “one” and “two” using high-pitch detection, this method does not scale to thousands of words spoken by diverse individuals in various environments and languages. Instead, the most effective approach today is to develop a machine learning model that learns from large datasets of recorded speech, enabling it to generalise across different speakers and conditions.
+
+
+![Figure 1-4. Machine learning can help humans learn](https://github.com/user-attachments/assets/7ff93963-9256-4482-acab-42f8d26f9440)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Powored Quantitative Investment System
+title: AI Powered Quantitative Investment System
 subtitle: Software Requirements Specification (SRS)
 author: Insung
 categories: Project

@@ -3,9 +3,10 @@ layout: post
 title: "Basic Data Exploration"
 subtitle: "Load and understand your data."
 author: Insung
-categories: [Data Science, Machine Learning]
-tags: [Data Science, Machine Learning]
+categories: [Data Science, Machine Learning, Kaggle]
+tags: [Data Science, Machine Learning, Kaggle]
 top:
+sidebar: []
 ---
 
 **[Machine Learning Course Home Page](https://www.kaggle.com/learn/machine-learning)**

@@ -63,3 +63,32 @@ To summarise, machine learning is great for:
 - Getting insights about complex problems and large amounts of data
 
 ### Examples of Applications
+
+Let's look at some concrete examples of machine learning tasks, along with the techniques that can tackle them:
+
+*Analyzing images of products on a production line to automatically classify them*
+- This is image classification, typically performed using **convolutional neural networks(CNNs)**.
+
+*Detecting tumors in brain scans*
+- This is semantic image segmentation, where each pixel in the image is classified (as we want to determine the exact location and shape of tumors), typically using CNNs or transformers.
+
+*Automatically classifying news articles*
+- This is **natural language processing(NLP)**, and more specifically text classification, which can be tackled using **recurrent neural networks(RNNs)** and CNNs, but transformers work even better.
+
+*Creating a chatbot or a personal assistant*
+- This involves many NLP components, including **natural language understanding(NLU)** and question-answering modules.
+
+*Forecasting your company's revenue next year, based on many performance metrics*
+- This is a regression task(i.e.,predicting values) that may be tackled using any regression model, such as a linear regression or polynomial regression model, a regression support vector machine, a regression random forest, or an artificial neural network. If you want to take into account sequences of past performance metrics, you may want to RNNs, CNNs, or transformers
+
+*Segmenting vlients based on their purchases so that you can design a different marketing strategy for each segment*
+- This is clustering, which can be achieved using k-means, DBSCAN, and more.
+
+### Type of Machine Learning Systems
+There are so many different types of machine learning systems that it is useful to classify them in broad categories, based on the following criteria:
+
+- How they are supervised during training (supervised, unsupervised, semi-supervised, self-supervised, and others)
+- Whether or not they can learn incrementally on the fly(online versus batch learning)
+- Whether they work by simply comparing new data points to known data points, or instead by detecting patterns in the training data and building a predictive model, much like scientist do(instance-based versus model-based learning)
+
+These criteria are not exclusive; you can combine them in any way you like. For example, a state-of-the-art spam filter may learn on the fly using a deep neural network model trained using human-provided examples of spam and ham; this makes it an online, model-based, supervised learning system.

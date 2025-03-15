@@ -13,7 +13,6 @@ sidebar: []
 
 ---
 
-
 # Introduction
 
 In this exercise, you will create and submit predictions for a Kaggle competition. You can then improve your model (e.g. by adding features) to apply what you've learned and move up the leaderboard.

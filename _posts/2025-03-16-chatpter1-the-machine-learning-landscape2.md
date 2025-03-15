@@ -21,3 +21,6 @@ A typical supervised learning taks is *classification*. The spam filter is a goo
 Another typical task is to predict a *target* numeric value, such as the price of a car, given a set of *features* (mileage, age, barnd, etc.). This sort of task is called regression ([Figure 1-6]()). To train the system, you need to give it many examples of cars, including both their features and their targets(i.e., their prices).
 
 Note that some regression models can be used for classification as well, and vice versa. For example, *logistic regression* is commonly used for classification, as it can output a value that corresponds to the probability of belonging to a given calss(e.g., 20% chance of being spam).
+
+> ## Note
+> The words *target* and *label* are generally treated as sysnonyms in supervised learning, but *target* is more common in regression tasks and *label* is more common in classification tasks. Moreiover, *features* are sometimes called *predictors* or *attributes*. These terms may refer to indicidual samples (e.g., "this car's mileage feature is equal to 15,000") or to all samples (e.g., "the mileage feature is stronly correlated with price").

@@ -3,9 +3,10 @@ layout: post
 title: "Machine Learning Competitions"
 subtitle: "Enter the world of machine learning competitions to keep improving and see your progress."
 author: Insung
-categories: [Machine Learning]
-tags: [Machine Learning]
+categories: [Machine Learning, Kaggle]
+tags: [Machine Learning, Kaggle]
 top:
+sidebar: []
 ---
 
 **This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/alexisbcook/machine-learning-competitions).**

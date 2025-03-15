@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Part I The Fundamentals of Machine Learning"
-subtitle: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 3rd Edition"
+subtitle: "Chapter 1. The Machine Learning Landscape"
 author: Insung
-excerpt_image: assets/images/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.jpg
+excerpt_image: https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff
 categories: [Machine Learning]
 tags: [Machine Learning]
 top:
 ---
 ## Chapter 1. The Machine Learning Landscape
+---
 
 In this chapter I will start by clarifying what machine learning is and why you may want to use it.
 Then, befroe we set out to explore the machine learning continent, we will take a look at the map and elarn about the main regions and the most notable landmarks: supervised versus unsupervised learning and thier varinats, online versus batch learning, instance-based versus model-based learning. Then we will look at the workflow of a typical ML project, dicuss the main challenges you may face, and cover how to evaluate and fine-tune a machine learning system.

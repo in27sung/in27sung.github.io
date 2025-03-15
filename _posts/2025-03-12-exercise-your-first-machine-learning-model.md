@@ -3,9 +3,10 @@ layout: post
 title: "Your First Machine Learning Model"
 subtitle: "Building your first model. Hurray!"
 author: Insung
-categories: [Data Science, Machine Learning]
-tags: [Data Science, Machine Learning]
+categories: [Data Science, Machine Learning, Kaggle]
+tags: [Data Science, Machine Learning, Kaggle]
 top:
+sidebar: []
 ---
 
 **This notebook is an exercise in the [Introduction to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course.  You can reference the tutorial at [this link](https://www.kaggle.com/dansbecker/your-first-machine-learning-model).**

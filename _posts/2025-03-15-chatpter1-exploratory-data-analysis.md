@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Practical Statistics for Data Scientists, 2nd Edition"
+title: "Chapter 1. Exploratory Data Analysis"
 subtitle: "50+ Essential Concepts Using R and Python"
 author: Insung
 excerpt_image: assets/images/Practical_Statistics_for_Data_Scientists_-_Peter_Gedeck.jpg

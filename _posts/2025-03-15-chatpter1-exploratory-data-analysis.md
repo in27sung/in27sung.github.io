@@ -65,3 +65,4 @@ The typical frame of reference for an analysis in data science is a rectangular 
 ---
 
 *Rectangular data* is essentially a two-dimentional matrix with rows indicating records(cases) and columns indicating features(variables). The data dosen't always start in this form: unstructured data(e.g., text) must be processed and manipulated so that it can be represented as a set of features in the rectangular data(see [Elements of Structured Data](/data%20science/statistics/2025/03/15/chatpter1-exploratory-data-analysis.html#h-elements-of-structured-data)). Data in relational databases must be extracted and put into a single table for most data analaysis and modeling tasks.
+

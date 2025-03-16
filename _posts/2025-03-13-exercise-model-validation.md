@@ -3,8 +3,8 @@ layout: post
 title: "Model Validation"
 subtitle: "Measure the performance of your model, so you can test and compare alternatives."
 author: Insung
-categories: [Machine Learning, Kaggle]
-tags: [Machine Learning, Kaggle]
+categories: [Machine Learning]
+tags: [Kaggle,Machine Learning]
 top:
 sidebar: []
 ---

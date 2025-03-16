@@ -3,8 +3,8 @@ layout: post
 title: "Underfitting and Overfitting"
 subtitle: "Fine-tune your model for better performance."
 author: Insung
-categories: [Machine Learning, Kaggle]
-tags: [Machine Learning, Kaggle]
+categories: [Machine Learning]
+tags: [Kaggle,Machine Learning]
 top:
 sidebar: []
 ---

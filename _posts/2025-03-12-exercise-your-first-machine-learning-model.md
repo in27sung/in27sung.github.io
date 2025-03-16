@@ -3,7 +3,7 @@ layout: post
 title: "Your First Machine Learning Model"
 subtitle: "Building your first model. Hurray!"
 author: Insung
-categories: [Data Science, Machine Learning, Kaggle]
+categories: [Data Science, Machine Learning]
 tags: [Data Science, Machine Learning, Kaggle]
 top:
 sidebar: []

@@ -3,8 +3,8 @@ layout: post
 title: "Random Forests"
 subtitle: "Using a more sophisticated machine learning algorithm."
 author: Insung
-categories: [Machine Learning, Kaggle]
-tags: [Machine Learning, Kaggle]
+categories: [Machine Learning]
+tags: [Kaggle,Machine Learning]
 top:
 sidebar: []
 ---

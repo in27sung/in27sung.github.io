@@ -3,8 +3,8 @@ layout: post
 title: "Machine Learning Competitions"
 subtitle: "Enter the world of machine learning competitions to keep improving and see your progress."
 author: Insung
-categories: [Machine Learning, Kaggle]
-tags: [Machine Learning, Kaggle]
+categories: [Machine Learning]
+tags: [Kaggle,Machine Learning]
 top:
 sidebar: []
 ---

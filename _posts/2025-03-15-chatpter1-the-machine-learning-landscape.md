@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Part I The Fundamentals of Machine Learning"
-subtitle: "Chapter 1. The Machine Learning Landscape"
+title: "Chapter 1. The Machine Learning Landscape"
+subtitle: "Part I The Fundamentals of Machine Learning"
 author: Insung
 excerpt_image: https://github.com/user-attachments/assets/8db81747-2d78-436d-8342-72db5423e4ff
 categories: [Machine Learning]
 tags: [Machine Learning]
 top:
 ---
+# Part I The Fundamentals of Machine Learning
 ## Chapter 1. The Machine Learning Landscape
 ---
 

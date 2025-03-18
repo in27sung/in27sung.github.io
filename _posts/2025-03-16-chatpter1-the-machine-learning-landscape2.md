@@ -70,3 +70,5 @@ For example, suppose you want to know if money makes people happy, so you downlo
 ![Table 1-1](https://github.com/user-attachments/assets/526d5f44-56d0-4365-8139-9ff0c2cad2ff)
 
 Let's plot the data for these countires([Figure 1-18]())
+
+![Figure 1-18](https://github.com/user-attachments/assets/ab9eef58-87d2-40df-b613-80ee7b1a7f3c)

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Main Challenges of Machine Learning"
+subtitle: "Chapter 1. The Machine Learning Landscape 3"
+author: Insung
+excerpt_image: assets/images/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.jpg
+categories: [Machine Learning]
+tags: [Machine Learning]
+top:
+---
+
+---
+
+## <span style="color:#800000">Main Challenges of Machine Learning</span>
+
+In short, since your main task is to select a model and train it on some data, the two things that can go wrong are "bad model" and "bad data". Let's start with examples of bad data.
+
+### Insufficient Quantity of Training Data
+For a toddler to learn what an apple is, all it takes is for you to point to an apple and say "apple" (possibly repeating this procedure a few times). Now the child is able to recognise apples in all sorts of colours and shapes.
+
+Machine learning is not quite there yet; it takes a lot of data for most machine learning algorithms to work properly. Even for very simple problems you typically nned thousands of examples, and for complex problems such as image or speech recognistion you may need millions of examples (unless you can reuse parts of an existing model).
+
+
+> ## The Unreasonable Effectiveness of Data
+> In a [famous paper](https://dl.acm.org/doi/10.3115/1073012.1073017) published in 2001, Microsoft researchers Muchele Banko and Eric Brill showed that very different machine learning algorithms, including fairly simple ones, performed almost identically well on a complex problem of natural language disambiguation once they were given enough data (as you can see in [Figure 1-21]()).
+>
+> As the authors put it, "these results suggest taht we may want to reconsider the trade-off bewteen spending time and money on algorithm development versus spending it on corpus developement"
+> 
+> The idea that data matters more than algorithms for xomplex problems was further popularised by Peter Borvig et al. in a paper titled ["The Unreasonable Effectiveness of Data"](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf), published in 2009. It should be noted, however, that small and medium-sized datasets are still very common, and it is not always easy or cheap to get extra training data.
+
+### Nonrepresentative Training Data
+In order to generalise well, it is crucial that your training data be representative of the new cases you want to generalise to. This is true whether you use instance-based learning or model-based learning.
+
+For example, the set of countries you used ealer for training the linear model was not perfectly representative;

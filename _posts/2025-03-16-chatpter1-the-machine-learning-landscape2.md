@@ -56,12 +56,17 @@ Possibly the most trivial form of learning is simply to learn by heart.If you we
 
 Instead of just flagging emails that are identical to known spam emails, your spam filter could be programmed to also flag emails that are very similar to known spam emails. This requries a measure of similarity between two emails. A (very basic) Similarity measure bewteen two emails could be to count the number of words they have in common. The system would flag an email as spam if it has many words in common with a known spam email.
 
-This is called instance-based learning: the system learns the examples by heart, then generalises to new cases by using a similarity measure to compare them to the learned examples (or a subset of them). For example, in [Figure 1-16](![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron](https://github.com/user-attachments/assets/53e71d73-b5a5-48da-bbe2-ab8387f99479)
-) the new instance would be classified as a triangle because the majority of the most similar instances belong to that class. 
+This is called instance-based learning: the system learns the examples by heart, then generalises to new cases by using a similarity measure to compare them to the learned examples (or a subset of them). For example, in [Figure 1-16]() the new instance would be classified as a triangle because the majority of the most similar instances belong to that class. 
+
+![Figure 1-16](https://github.com/user-attachments/assets/53e71d73-b5a5-48da-bbe2-ab8387f99479)
 
 ### <span style="color:#666666">Model-based learning and a typical machine learning workflow</span>
-Another way to generalise from a set of examples is to build a model of these examples and then use that model to make predictions. This is called model-based learning ([Figure 1-17](![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 10](https://github.com/user-attachments/assets/2e353aa4-63c0-41ce-a2cb-37afeaa3f8d9)
-)).
+Another way to generalise from a set of examples is to build a model of these examples and then use that model to make predictions. This is called model-based learning ([Figure 1-17]()).
 
-For example, suppose you want to know if money makes people happy, so you download the better Life Index data from the [OECD's website]() and [World Bank stats]() about gross domestic product(GDP) per capita. Then you join the tables and sort by GDP per capita. [Table 1-1](![_OceanofPDF com_Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron 11](https://github.com/user-attachments/assets/526d5f44-56d0-4365-8139-9ff0c2cad2ff)
-) shows an excerpt of what you get.
+![Figure 1-17](https://github.com/user-attachments/assets/2e353aa4-63c0-41ce-a2cb-37afeaa3f8d9)
+
+For example, suppose you want to know if money makes people happy, so you download the better Life Index data from the [OECD's website]() and [World Bank stats]() about gross domestic product(GDP) per capita. Then you join the tables and sort by GDP per capita. [Table 1-1]() shows an excerpt of what you get.
+
+![Table 1-1](https://github.com/user-attachments/assets/526d5f44-56d0-4365-8139-9ff0c2cad2ff)
+
+Let's plot the data for these countires([Figure 1-18]())

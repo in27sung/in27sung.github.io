@@ -31,4 +31,17 @@ Machine learning is not quite there yet; it takes a lot of data for most machine
 ### Nonrepresentative Training Data
 In order to generalise well, it is crucial that your training data be representative of the new cases you want to generalise to. This is true whether you use instance-based learning or model-based learning.
 
-For example, the set of countries you used ealer for training the linear model was not perfectly representative;
+For example, the set of countries you used ealer for training the linear model was not perfectly representative; it did not contain any country with a GDP per capita lower than $23,500 or higher than $62,500. [Figure 1-2]() shows what the data looks like when you add such countries.
+
+### Poor-Quality Data
+Obviously, if your training data is full of errors, outliers, and noise(e.g., due to poor-quality measurements), it will make it harder for the system to detect underlying patterns, so your system is less liekly to perform well. It is often well worth the effort to spend time clearning up your training data. The truth is, most data scientists spend a significant part of their time doing just that. The following are a couple examples of when you'd want to clean up training data:
+- If some instances are clearly outliers, it may help to somply discard them or try to fix the errors manually.
+- If some instances are missing a few features (e.g., 5% of your customers did not specify their age), you must decide whether you want to ignore this attribute altogether, ignore these instances, fill in the missing values (e.g., with the median age), or train one model with the feature and one model without it.
+- Creating new features by gathering new dadta
+
+Now that we have looked at many examples of bad data, let's look at a couple examples of bad algorithms. 
+
+### Overfitting the Training Data 
+Say you are visiting a foreign country and the taxi driver rips you off. You might be tempted to say that all taxi drivers in that country are thieves. Overgeneralising is something that we humans do all too often, and unfortunately machines can fall into the same trap if we are not careful. In machine learning this is called overfitting: it means that the model performs well on the training data, but it does not generalise well.
+
+[Figure 1-23]() shows an example of a high-degree polynomial life satisfaction model that strongly overfits the training data. Even though it performs much better on the training data than the simple linear model, would you really trust its predictions?

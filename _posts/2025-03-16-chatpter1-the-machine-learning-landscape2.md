@@ -72,3 +72,16 @@ For example, suppose you want to know if money makes people happy, so you downlo
 Let's plot the data for these countires([Figure 1-18]())
 
 ![Figure 1-18](https://github.com/user-attachments/assets/ab9eef58-87d2-40df-b613-80ee7b1a7f3c)
+
+There does seem to be a trend here! Although the data is noisy(i.e., partly random), it looks like life satisfaction goes up more or less linearly as the country's GDP per capita increases. So you decide to model life stisfaction as a linear function of GDP per capita. This step is called **model selection**: you selected a *linear model* of life satisfaction with just one attribute, GDP per capita ([Equation 1-1]()).
+
+#### Equation 1-1. A simple linear model
+$$life\_satisfaction = \theta_0 + \theta_1 \times GDP\_per\_capita$$
+
+This model has two model parameters, $\theta_0$ and $\theta_1$. By tweaking these parameters, you can make your model represent any linear function, as shown in [Figure 1-19]().
+
+
+
+
+
+

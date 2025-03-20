@@ -49,5 +49,13 @@ Say you are visiting a foreign country and the taxi driver rips you off. You mig
 
 ![Figure 1-23](https://github.com/user-attachments/assets/d976b1ae-8b70-4565-8c66-e2cbf9770f34)
 
-Complex models
+Complex models such as deep neural networks can detect subtle patterns in the data, but if the training set is noisy, or if it is too small, which introduces sampling noise, then the model is likely to detect patterns in the noise itself (as in the taxi driver example). Obviously these partterns will not generalise to new instances. For example, say you feed your life satisfaction model many more attributes, including uniinformative ones such as the country's name. In that case, a complex model may detect patterns like the fact that all countires in the training data with a $w$ in their name have a life satisfaction greater than 7: New Zealand (7.3), Norway (7.6), Sweden (7.3), and Switzerland (7.5). How confident are you that the w-satisfaction rule generalises to Rwanda or Zimbabwe? Obviously this pattern occurred in the training data by pure chance, but the model has no way to tell whether a pattern is real or simply the result of noise in the data.
+
+> <span style="color:#884848">Warning</span>
+>
+> Overfitting happens when the model is too complex relative to the amount and noisiness of the training data. Here are possible solutions:
+> - Simplify the model by selecting one with fewer parameters (e.g., a linear model rather than a high-degree polynomial model), by reducing the number of attributes in the training data, or by constraining the model.
+> - Gather more trainig data
+> - Reduce the noise in the training data (e.g., fix data errors and remove outliers).
+
 

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Where data makes a difference for the future
-subtitle: 
+subtitle: Foundations of Data Science
 author: Insung
 categories: [Data Science]
-tags: [Data Science]
+tags: [Data Science, Google]
 top:
 ---
 

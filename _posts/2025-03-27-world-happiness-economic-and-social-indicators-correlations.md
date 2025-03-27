@@ -1,7 +1,7 @@
 ---
 layout: post
 title: World Happiness & Economic and Social Indicators Correlations
-subtitle: Repost
+subtitle: Report
 author: Insung
 categories: Project
 tags: [Project, Artificial Intelligence, Machine Learning, Data Science]
@@ -14,13 +14,14 @@ top:
 This project investigates the relationship between countries' happiness scores and key economic and social indicators. It aims to build a robust predictive model while addressing data quality challenges such as missing values and inconsistent formatting. The output includes complete data cleaning, exploratory data analysis (EDA), model development, evaluation, and interpretation.
 
 ---
+![](https://youtu.be/WvpXrT8wuOk)
 
 ### Dataset Description
-The dataset combines multiple global indicators for 131 countries, including:
-- **Year:** The year for which the data is recorded(e.g., 2015, 2020, 2024)
+The dataset combines multiple global indicators for 130 countries, including:
+- **Year:** The year for which the data is recorded(2015-2023)
 - **Country:** The name of the country.
 - **GDP_per_capita:** Gross Domestic Product per capita, which is a measure of a country's economic outout per person.
-- **Education_Attainment:** The level of education achieved by the population.
+- **Education_Attainment:** Percentage of the population aged 25 and older who have completed at least a bachelor’s degree or equivalent tertiary education.  
 - **Life_Expectancy:** The average number of years a person is expected to live.
 - **Unemployment_Rate:** The percentage of the labour force that is unemployed.
 - **Happiness Score(target):** A metric measuring the self-reported happiness of individuals in a country.
@@ -28,9 +29,12 @@ The dataset combines multiple global indicators for 131 countries, including:
 ---
 
 ### Data Preprocessing
+- Data Reshaping
+- Removing Non-Country Entries for Dataset Integrity
+- Removing Country Mismatches Against 2023 Target Set
+- Standardising Country Names Across Datasets for Reliable Merging
 
-#### Initial Cleaning Steps(Chat GPT)
-- **Country Name Standardisation**: Converted to title case.
+#### Cleaning Steps(Chat GPT)
 - **Education_Attainment**:
   - Missing values filled using **country-wise median**.
   - Remaining nulls filled with **overall median**.
@@ -79,10 +83,10 @@ The dataset combines multiple global indicators for 131 countries, including:
 - Feature Importance: GDP > Life Expectancy > Unemployment > Education
 
 #### Performance Comparison
-1. **Model A**: Trained on the dataset with missing values filled with ChatGPT
+1. **Model A**: Trained on the dataset with missing values filled with ChatGPT.
 ![test 2023 gpt](/assets/images/jupyter/test_2023_gpt.png)
 
-**Post EDA version:**
+2. **Model B**: Trained on the interpolated dataset using country-wise time-series imputation.
 ![test 2023 interpolation](/assets/images/jupyter/test_2023_interpolation.png)
 
 - **No overfitting observed**: Validation and Test performance are consistent.
@@ -100,26 +104,31 @@ The dataset combines multiple global indicators for 131 countries, including:
 
 ---
 
-### Model Misestimation & Root Cause Hypothesis
+### Feature Importance
 ![Feature Importance](/assets/images/jupyter/Feature_Importance_interpolation.png)
-- Preliminary analysis suggested a tendency to underestimate happiness in low-GDP countries.
-- However, further validation is required to confirm if **low GDP consistently aligns with low happiness**, or if other socio-political factors are contributing.
-- Potential causes of underestimation include:
-  - **Feature bias** toward GDP in the training data
-  - **Incomplete or imputed data** for low-income nations
-  - **Underrepresentation** of low-GDP countries in training samples
-  - **Uncaptured factors** like trust, safety, and cultural context
+#### Feature Importance Analysis
+- The model heavily depends on **GDP per capita** (`importance = 0.676`), far outweighing other features such as:
+  - Life Expectancy (`0.19`)
+  - Unemployment Rate and Education Attainment (each ~`0.06`)
+- This **strong GDP dominance** in feature weighting confirms a **structural bias**: the model learns to associate happiness primarily with economic strength.
+
+#### Hypothesised Causes of Underestimation:
+- **Feature bias**: Overweighting of GDP leads to undervaluing happiness in countries where non-economic factors matter more.
+- **Incomplete data**: Low-income nations often have more missing values, leading to less informative or averaged inputs.
+- **Sample imbalance**: High-GDP countries may be overrepresented in the training set, skewing the learned patterns.
+- **Omitted variables**: Factors like **social trust**, **freedom**, **cultural values**, and **community resilience**—which contribute meaningfully to happiness—are not currently modelled.
+
+> In short, the model is accurate for high-GDP countries but systematically undervalues subjective well-being in lower-income contexts. **Expanding the feature space beyond economics is essential to build a fairer and more generalisable model.**
 
 ---
 
 ### Next Step
 
-- Enhance model robustness by incorporating **non-economic features**, particularly for low-GDP countries (e.g., social trust, freedom, mental well-being).
-- Integrate **qualitative or geopolitical indicators** such as governance quality, safety perception, and civil liberties.
-- Conduct **targeted feature engineering** to reduce bias toward GDP and better capture drivers of happiness across varying economic contexts.
-- Analyse **outlier countries** (high happiness, low GDP) to uncover latent factors through domain research or case studies.
-- Apply **clustering and temporal analysis** to identify evolving happiness patterns and region-specific trends over time.
-- Evaluate model generalisation using **cross-year validation** to ensure robustness beyond the 2023 dataset.
+- Reduce **GDP-dominance bias** by integrating **non-economic predictors** such as social trust, freedom of choice, generosity, and perceived corruption—especially for underrepresented low-GDP countries.
+- Incorporate **qualitative and geopolitical indicators** (e.g., governance quality, safety perception, civil liberties) to capture hidden dimensions of happiness.
+- Perform **targeted feature engineering** informed by outlier analysis to uncover latent drivers in countries with **high happiness but low GDP**.
+- Explore **region-specific models** or interaction terms to address structural differences in how happiness is formed across countries.
+- Apply **clustering and temporal modelling** to detect evolving happiness dynamics and localised trends.
 
 ---
 
@@ -143,6 +152,6 @@ The dataset combines multiple global indicators for 131 countries, including:
 
 This project is for educational purposes and submitted as part of **[CS50’s Introduction to Computer Science 2025 Final Project](https://cs50.harvard.edu/x/2025/project/)**.
 
-**Note:** AI-based tools (ChatGPT) were used to assist with structuring the README and project design but all data handling, analysis, and coding are the author’s original work. AI assistance is acknowledged as required by CS50 guidelines.
+**Note:** AI-based tools (ChatGPT) were used to assist with structuring the project design but all data handling, analysis, and coding are the author’s original work. AI assistance is acknowledged as required by CS50 guidelines.
 
 ---

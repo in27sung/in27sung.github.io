@@ -78,13 +78,13 @@ One of the tasks essential to any analytics project is providing access to data.
 ## 📊 RACI Matrix - Web Service Development Project
 
 | **Task**                           | **Frontend Developer** | **Backend Developer** | **UI/UX Designer** | **Project Manager** | **CTO** |
-|-----------------------------------|------------------------|-----------------------|--------------------|---------------------|--------|
-| **Design Application UI/UX**      | C                      | C                     | R                  | C                   | A      |
-| **Develop Frontend Components**   | R                      | C                     | C                  | C                   | A      |
-| **Develop Backend API**           | C                      | R                     |                    | C                   | A      |
-| **Integrate Frontend & Backend**  | R                      | R                     | C                  | C                   | A      |
-| **Deploy to Production Server**   |                        | R                     |                    | C                   | A      |
-| **Ensure Security Compliance**    | C                      | R                     |                    | C                   | A      |
+|-----------------------------------|------------------------|-----------------------|--------------------|---------------------|----------|
+| **Design Application UI/UX**      | C                      | C                     | R                  | C                   | A        |
+| **Develop Frontend Components**   | R                      | C                     | C                  | C                   | A        |
+| **Develop Backend API**           | C                      | R                     | I                  | C                   | A        |
+| **Integrate Frontend & Backend**  | R                      | R                     | C                  | C                   | A        |
+| **Deploy to Production Server**   | I                      | R                     | I                  | C                   | A        |
+| **Ensure Security Compliance**    | C                      | R                     | I                  | C                   | A        |
 
 
 ### Key Takeaways

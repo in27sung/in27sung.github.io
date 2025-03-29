@@ -10,9 +10,9 @@ top:
 
 ### 목차
 
-[제1절 빅데이터의 이해](/data%20science/2025/03/29/Introduction-to-big-data.html)
+[제1절 빅데이터의 이해](/adsp/2025/03/29/Introduction-to-big-data.html)
 
-[제2절 빅데이터의 가치와 영향](/data%20science/2025/03/29/the-value-and-impat-of-big-data.html)
+[제2절 빅데이터의 가치와 영향](/adsp/2025/03/29/the-value-and-impat-of-big-data.html)
 
 [제3절 비즈니스 모델]()
 

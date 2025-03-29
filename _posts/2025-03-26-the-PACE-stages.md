@@ -3,8 +3,9 @@ layout: post
 title: The PACE Stages
 subtitle: The data project workflow
 author: Insung
+excerpt_image: /assets/images/coursera/PACE.png
 categories: [Data Science]
-tags: [Data Science, Google]
+tags: [Data Science, Google, PACE,framework]
 top:
 ---
 

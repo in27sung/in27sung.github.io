@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 제1절 데이터와 정보 
+title: 데이터와 정보 
 subtitle: 과목 I 제1장 데이터의 이해
 author: Insung
 excerpt_image: /assets/images/ds/SECI_Model.jpg
@@ -13,7 +13,7 @@ top:
 
 [제1절 데이터와 정보](/adsp/2025/03/28/Introduction-to-data.html)
 
-[제2절 데이터베이스 정의와 특징]()
+[제2절 데이터베이스 정의와 특징](/adsp/2025/03/28/database-definition-and-characteristics.html)
 
 [제3절 데이터베이스 활용]()
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Data Projessionals use AI
+title: How Data Professionals use AI
 subtitle: Reading
 author: Insung
 categories: [Data Science]

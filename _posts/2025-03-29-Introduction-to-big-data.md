@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 제1절 빅데이터의 이해
+title: 빅데이터의 이해
 subtitle: 과목 I 제2장 데이터의 가치와 미래
 author: Insung
 excerpt_image: /assets/images/ds/3-vs-of-big-data.png
@@ -13,13 +13,13 @@ top:
 
 [제1절 빅데이터의 이해](/adsp/2025/03/29/Introduction-to-big-data.html)
 
-[제2절 빅데이터의 가치와 영향](/adsp/2025/03/29/the-value-and-impat-of-big-data.html)
+[제2절 빅데이터의 가치와 영향](/adsp/2025/03/29/the-value-and-impact-of-big-data.html)
 
-[제3절 비즈니스 모델]()
+[제3절 비즈니스 모델](/adsp/2025/03/29/business-model.html)
 
-[제4절 위기 요인과 통제 방안]()
+[제4절 위기 요인과 통제 방안](/adsp/2025/03/29/crisis-factors-and-control-measures.html)
 
-[제5절 미래의 빅데이터]()
+[제5절 미래의 빅데이터](/adsp/2025/03/29/future-of-big-data.html)
 
 ---
 

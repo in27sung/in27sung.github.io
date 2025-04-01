@@ -1,15 +1,21 @@
 ---
 layout: post
 title: Ideal qualities for data analytics professionals
-subtitle: Foundations of Data Science
+subtitle: Foundations of Data Science - Data career skills
 author: Insung
-categories: [Data Science]
+categories: [Google Advanced Data Analytics]
 tags: [Data Science, Google]
 top:
 ---
 
-## Ideal qualities for data analytics professionals
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/O_I67xUYSIiRZok4ASYeDQ.processed/full/720p/index.mp4?Expires=1743638400&Signature=YVIUY6Hn-oYNkkLVb-E6VKeW~ueDstV~TxLletx0qBk4mb6G8MZ4pHWASuZvaxPHE2Mpv3JZ7yc4z5ciCPYGbUJfMxIvRANvx1mIQAsJRI7wVy24m0ThFHwhS9wwA0qqNOBtq~w7znINrV~5kXyMBI1WctTgIyBtIWBtq-kr9bQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p class="source-text"><em>Source: "The top skills needed for a data career" - Google Advanced Data Analytics Professional Certificate</em></p>
 
+
+## Ideal qualities for data analytics professionals
 You have been learning about skills that can help you enter and excel in the data career space. In this program, you will be building technical abilities, which are necessary before pursuing opportunities in data analytics. Job postings will include a list of the required technical skills prominetly displayed. Quite often, organisaions will also make note of additional skills and traits that go beyond working with data on a computer. In this reading, you will explore examples of additional skills and traits that employers are seeking when searching for data analytics professionals. 
 
 As you begin to search for job opportunities, many employers seek additional skills that are not exclusive to digital fields. In the sections below, you will learn more about these traits through excerpts found within data analytics job postings.

@@ -1,12 +1,17 @@
 ---
 layout: post
 title: Build the Perfect Data Team
-subtitle: Work in the field
+subtitle: Foundations of Data Science - Work in the field
 author: Insung
-categories: [Data Science]
+categories: [Google Advanced Data Analytics]
 tags: [Data Science, Google]
 top:
 ---
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/vKsHPOOrTeyf55R-L7vHrg.processed/full/720p/index.mp4?Expires=1743638400&Signature=VwXFVNG58B38fyv--5BheobpkTNHAvfiPYDjoNTCsqwYLURAF1tUKJHIsSqN-Z14U5nZtiEzjHY1sVpHv3Gbhn9ls2uMXh3qQVF6oIQn8xgaJCtiEls4BcHmc4uMr1o40liLwxUafUeoMP7XxNphrlctqEpgx0SmAEQ8X4Cmykw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p class="source-text"><em>Source: "The data professional career space" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 ## Build the perfect data team
 

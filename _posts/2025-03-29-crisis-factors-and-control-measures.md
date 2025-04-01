@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 위기 요인과 통제 방안
-subtitle: 과목 I 제2장 데이터의 가치와 미래
+subtitle: 과목 Ⅰ 제2장 데이터의 가치와 미래
 author: Insung
 categories: [ADsP]
 tags: [ADsP, Big Data, Data Science]
@@ -18,11 +18,11 @@ top:
 
 [제4절 위기 요인과 통제 방안](/adsp/2025/03/29/crisis-factors-and-control-measures.html)
 
-[제5절 미래의 빅데이터](/adsp/2025/03/29/future-of-big-data.html)
+[제5절 미래의 빅데이터](/adsp/2025/03/30/future-of-big-data.html)
 
 ---
 
-## 1. 빅데이터의 위기 요인과 통제 방안
+## 1. 위기 요인과 통제 방안
 
 ---
 

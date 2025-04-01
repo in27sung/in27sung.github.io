@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 빅데이터의 가치와 영향
-subtitle: 과목 I 제2장 데이터의 가치와 미래
+title: 미래의 빅데이터
+subtitle: 과목 Ⅰ 제2장 데이터의 가치와 미래
 author: Insung
 categories: [ADsP]
 tags: [ADsP, Big Data, Data Science]

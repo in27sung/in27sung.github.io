@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Organise Your Data Team
-subtitle: Activity
+title: "Activity: Organise Your Data Team"
+subtitle: Foundations of Data Science - Work in the field 
 author: Insung
-categories: [Data Science]
+categories: [Google Advanced Data Analytics]
 tags: [Data Science, Google]
 top:
 ---

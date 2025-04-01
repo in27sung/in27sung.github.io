@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 데이터베이스 정의와 특징
-subtitle: 과목 I 제1장 데이터의 이해
+subtitle: 과목 Ⅰ 제1장 데이터의 이해
 author: Insung
-categories: [Data Science]
+categories: [ADsP]
 tags: [Data Science, ADsP]
 top:
 ---

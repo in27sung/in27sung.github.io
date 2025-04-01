@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 빅데이터 분석과 전략 인사이트
-subtitle: 과목 I 제3장 가치 창조를 위한 데이터 사이언스와 전략 인사이트
+subtitle: 과목 Ⅰ 제3장 가치 창조를 위한 데이터 사이언스와 전략 인사이트
 author: Insung
 categories: [ADsP]
 tags: [ADsP, Big Data, Data Science]

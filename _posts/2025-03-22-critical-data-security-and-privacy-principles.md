@@ -3,10 +3,15 @@ layout: post
 title: Critical data security and privacy principles
 subtitle: Foundations of Data Science - Data career skills
 author: Insung
-categories: [Data Science]
+categories: [Google Advanced Data Analytics]
 tags: [Data Science, Google]
 top:
 ---
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/JloRwu4GSu2k6ONOxmvsOg.processed/full/720p/index.mp4?Expires=1743638400&Signature=YJJXydZIXsi8~BkapwULgSMZqf3~LwryI2EXtFv656jxcBvasXNVRD-6wun9v22QTqhpXUpsiiQiCOveaxQ3mQB5MCr7dWbmxSWww8sdrpuLIrrVbWhL9FR1vMNiQE3~XbipuPvZXbiW3a6d8Hapwk54HeUAFJq4be-qotWztY8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p class="source-text"><em>Source: "Important ethical considerations for data professionals" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 You have learned how data analytics can be used for good causes, like assisting nonprofit organizations. Also, you learned that data professionals need to protect privacy within data and remain aware of other considerations, like data bias and making assumptions about data. 
 

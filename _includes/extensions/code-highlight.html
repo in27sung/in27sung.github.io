@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   /* 주석 색상 - 라이트 모드에서도 초록색으로 설정 */
   .hljs-comment,
   .hljs-quote {
-    color: #2ea84a !important; /* 연한 초록색 */
+    color: #3d8b40 !important; /* 어두운 초록색 */
   }
   
   /* code language badge */
@@ -165,10 +165,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
   pre.code-output code {
     background: none !important;
     padding: 0 !important;
+    font-size: 13px !important; /* plaintext 글자 크기를 13px로 설정 */
   }
   
   pre.code-output .hljs {
     background: transparent !important;
+    font-size: 13px !important; /* plaintext hljs 글자 크기도 13px로 설정 */
   }
   
   /* 다크 모드 스타일링 */
@@ -191,12 +193,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
   html[data-theme="dark"] .hljs-comment,
   html[data-theme="dark"] .hljs-quote {
     color: #2ea84a !important; /* 연한 초록색 */
-  }
-  
-  /* highlight.js 특정 부분 스타일 대응 */
-  html[data-theme="dark"] .hljs-keyword,
-  html[data-theme="dark"] .hljs-selector-tag,
-  html[data-theme="dark"] .hljs-literal {
-    color: #cc99cd !important;
   }
 </style>

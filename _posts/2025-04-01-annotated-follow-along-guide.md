@@ -7,18 +7,11 @@ categories: [Google Advanced Data Analytics]
 tags: [Data Science, Google]
 top:
 ---
-
-<style>
-.error-message {
-  background-color: #fff;
-  color: #d63939;
-  padding: 10px;
-  border-left: 5px solid #d63939;
-  font-family: monospace;
-  white-space: pre;
-  margin: 10px 0;
-}
-</style>
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/AGuVcwrcTyOsgS6eH5ZlMw.processed/full/720p/index.mp4?Expires=1743638400&Signature=ayHdSU79sj7oHfpWiIzzCvNuPvDK23pItDkVH6ITJ9I0DCURJu2XSpYqAcGqHGZrk2VJqvQY3~FE-8iv4hp79WrlfQDbWlkOGMxHofRqI1Zmx4GyCt7YzYRCAjvI0OtS6CZeUPEuqrS3p6z8gPP-IQ8VPWXHPtxn2kXZv~YCbqQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p class="source-text"><em>Source: "Discover more about Python" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 ## Annotated follow-along guide: Hello, Python!
 
@@ -43,26 +36,23 @@ To skip directly to the code for a particular video, use the following links:
 <a name="1"></a>
 ## 1. [Discover more about Python](https://www.coursera.org/learn/get-started-with-python/lecture/JC2zu/discover-more-about-python)
 
-<video controls width="100%" style="max-width: 720px;">
-  <source src="https://d3c33hcgiwev3.cloudfront.net/AGuVcwrcTyOsgS6eH5ZlMw.processed/full/720p/index.mp4?Expires=1743638400&Signature=ayHdSU79sj7oHfpWiIzzCvNuPvDK23pItDkVH6ITJ9I0DCURJu2XSpYqAcGqHGZrk2VJqvQY3~FE-8iv4hp79WrlfQDbWlkOGMxHofRqI1Zmx4GyCt7YzYRCAjvI0OtS6CZeUPEuqrS3p6z8gPP-IQ8VPWXHPtxn2kXZv~YCbqQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<p class="source-text"><em>Source: "Discover more about Python" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 
 ```python
 # Print to the console.
 print("Hello, world!")
 ```
-Hello, world!
+
+    Hello, world!
 
 
 
 ```python
 # Print to the console.
 print(22)
-``` 
-22
+```
+
+    22
 
 
 
@@ -70,7 +60,11 @@ print(22)
 # Simple arithmetic
 (5 + 4) / 3
 ```
-3.0
+
+
+
+
+    3.0
 
 
 
@@ -83,8 +77,9 @@ age = 30
 print(country)
 print(age)
 ```
-Brazil
-30
+
+    Brazil
+    30
 
 
 
@@ -93,7 +88,11 @@ Brazil
 # Double equals signs are used to check equivalency.
 10**3 == 1000
 ```
-True
+
+
+
+
+    True
 
 
 
@@ -103,12 +102,12 @@ True
 # A single equals sign is reserved for assignment statements.
 10 ** 3 = 1000
 ```
-<pre class="error-message">
-File "&lt;ipython-input-6-8baa8abf97f4&gt;", line 3
-    10 ** 3 = 1000
-                    ^
-SyntaxError: can't assign to operator
-</pre>
+
+
+      File "<ipython-input-6-8baa8abf97f4>", line 3
+        10 ** 3 = 1000
+                      ^
+    SyntaxError: can't assign to operator
 
 
 
@@ -118,7 +117,11 @@ SyntaxError: can't assign to operator
 # Double equals signs are used to check equivalency.
 10 * 3 == 40
 ```
-False
+
+
+
+
+    False
 
 
 
@@ -128,7 +131,11 @@ False
 # Double equals signs are used to check equivalency.
 10 * 3 == age
 ```
-True
+
+
+
+
+    True
 
 
 
@@ -140,7 +147,8 @@ if age >= 18:
 else:
     print('minor')
 ```
-adult
+
+    adult
 
 
 
@@ -149,11 +157,12 @@ adult
 for number in [1, 2, 3, 4, 5]:
     print(number)
 ```
-1 <br>
-2 <br>
-3 <br>
-4 <br>
-5 <br>
+
+    1
+    2
+    3
+    4
+    5
 
 
 
@@ -164,9 +173,10 @@ my_list = [3, 6, 9]
 for x in my_list:
     print(x / 3)
 ```
-1.0 <br>
-2.0 <br>
-3.0 <br>
+
+    1.0
+    2.0
+    3.0
 
 
 
@@ -185,7 +195,8 @@ def is_adult(age):
 # Use the function that was just created.
 is_adult(14)
 ```
-minor
+
+    minor
 
 
 
@@ -195,7 +206,11 @@ new_list = [20, 25, 10, 5]
 
 sorted(new_list)
 ```
-[5, 10, 20, 25]
+
+
+
+
+    [5, 10, 20, 25]
 
 
 

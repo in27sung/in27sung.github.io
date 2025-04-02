@@ -45,13 +45,23 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
     block.setAttribute('class', 'hljs ' + lang);
     block.parentNode.setAttribute('data-lang', lang);
+    
+    // plaintext 처리 - 출력으로 처리
+    if (lang === 'plaintext' || lang === 'text') {
+      block.parentNode.classList.add('code-output');
+    }
   }
 
   function addBadge(block) {
     var enabled = ('{{ badge_enabled }}' || 'true').toLowerCase();
     if (enabled == 'true') {
       var pre = block.parentElement;
-      pre.classList.add('badge');
+      var lang = pre.getAttribute('data-lang');
+      
+      // plaintext는 배지 추가하지 않음
+      if (lang !== 'plaintext' && lang !== 'text') {
+        pre.classList.add('badge');
+      }
     }
   }
 
@@ -65,27 +75,128 @@ document.addEventListener('DOMContentLoaded', function(event) {
     var el = els[i];
     handle(el);
   }
+  
+  // 다크 모드 감지 및 적용
+  function applyDarkModeStyles() {
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      document.querySelectorAll('pre code.hljs').forEach(function(block) {
+        if (!block.parentNode.classList.contains('code-output')) {
+          block.style.background = '#1d1d1f';
+        }
+      });
+    }
+  }
+  
+  // 초기 적용
+  applyDarkModeStyles();
+  
+  // 다크 모드 전환 감지
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === 'data-theme') {
+        applyDarkModeStyles();
+      }
+    });
+  });
+  
+  observer.observe(document.documentElement, { attributes: true });
 });
 </script>
 
 <style>
+  /* 코드 셀 스타일 적용 (plaintext 제외) */
+  pre:not(.code-output) {
+    border-radius: 6px !important;
+    margin: 1.5em 0 1em 0 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+    transition: all 0.2s ease !important;
+    border-left: 4px solid {{badge_background_color}} !important;
+    background-color: #f8f9fa !important;
+  }
+  
+  pre:not(.code-output):hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  }
+  
+  /* highlight.js 기본 스타일 덮어쓰기 */
+  pre:not(.code-output) .hljs {
+    background-color: transparent !important;
+  }
+  
+  /* 주석 색상 - 라이트 모드에서도 초록색으로 설정 */
+  .hljs-comment,
+  .hljs-quote {
+    color: #2ea84a !important; /* 연한 초록색 */
+  }
+  
   /* code language badge */
   pre.badge::before {
     content: attr(data-lang);
     color: {{badge_color}};
     background-color: {{badge_background_color}};
     padding: 0 .5em;
-    border-radius: 0 2px;
+    border-radius: 0 4px 0 4px;
     text-transform: {{badge_text_transform}};
     text-align: center;
     min-width: 32px;
     display: inline-block;
     position: absolute;
     right: 0;
+    top: 0;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
   }
 
   /* fix wrong badge display for firefox browser */
   code > table pre::before {
     display: none;
+  }
+  
+  /* 출력(plaintext) 스타일링 - 모든 특수 스타일 제거 */
+  pre.code-output {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 0 1.5em 0 !important;
+  }
+  
+  pre.code-output code {
+    background: none !important;
+    padding: 0 !important;
+  }
+  
+  pre.code-output .hljs {
+    background: transparent !important;
+  }
+  
+  /* 다크 모드 스타일링 */
+  html[data-theme="dark"] pre:not(.code-output) {
+    background-color: #1d1d1f !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+  }
+  
+  html[data-theme="dark"] pre:not(.code-output):hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  }
+  
+  /* 다크 모드에서 highlight.js 스타일 명시적 덮어쓰기 */
+  html[data-theme="dark"] pre:not(.code-output) .hljs {
+    background-color: #1d1d1f !important;
+    color: #B0B0B0 !important;
+  }
+  
+  /* 다크 모드에서 주석 색상도 같은 초록색으로 설정 */
+  html[data-theme="dark"] .hljs-comment,
+  html[data-theme="dark"] .hljs-quote {
+    color: #2ea84a !important; /* 연한 초록색 */
+  }
+  
+  /* highlight.js 특정 부분 스타일 대응 */
+  html[data-theme="dark"] .hljs-keyword,
+  html[data-theme="dark"] .hljs-selector-tag,
+  html[data-theme="dark"] .hljs-literal {
+    color: #cc99cd !important;
   }
 </style>

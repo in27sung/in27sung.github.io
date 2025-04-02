@@ -8,8 +8,7 @@ tags: [Data Science, Kaggle, Google]
 top:
 ---
 
-##### Copyright 2025 Google LLC.
-
+#### Copyright 2025 Google LLC.
 
 ```python
 # @title Licensed under the Apache License, Version 2.0 (the "License");
@@ -1143,10 +1142,9 @@ file_contents = !curl https://raw.githubusercontent.com/magicmonty/bash-git-prom
 
 explain_prompt = f"""
 Please explain what this file does at a very high level. What is it, and why would I use it?
-
-```
-{file_contents}
-```
+    ```
+    {file_contents}
+    ```
 """
 
 response = client.models.generate_content(
@@ -1181,9 +1179,9 @@ Here's a breakdown:
 
     1.  **Download/Save:**  Save the script to a location on your system (e.g., `~/.bash-git-prompt.sh`).
     2.  **Source in Shell Configuration:**  Add a line to your shell's configuration file (e.g., `.bashrc` or `.zshrc`) to source the script:
-        ```bash
-        source ~/.bash-git-prompt.sh
-        ```
+    ```bash
+    source ~/.bash-git-prompt.sh
+    ```
     3.  **Initialize Prompt:**  After sourcing the script, there may be a command you need to run or add to your `.bashrc` to get the prompt to update.  Typically, you'll need to enable/install the prompt via a `gp_install_prompt` function call.
     4.  **Restart Shell:** Restart your terminal or source your shell configuration file (`source ~/.bashrc` or `source ~/.zshrc`) to apply the changes.
 

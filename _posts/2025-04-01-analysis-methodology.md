@@ -56,9 +56,12 @@ top:
 ## 2. 분석 방법론이 적용되는 업무 특성에 따른 모델
 
 ---
+다양한 분석 프로젝트의 특성에 맞춰 적용되는 분석 방법론 모델들을 살펴보겠습니다. 각 모델은 프로젝트의 목표, 요구사항, 위험 요소 등을 고려하여 선택됩니다.
 
 ### 폭포수 모델(Waterfall Model)
-단계를 거쳐 순차적으로 진행하는 방법으로, 현재 단계가 완료되어야 다음 단계로 진행될 수 있는 하향식(Top-Down) 방향으로 진행됩니다. 하지만 문제나 개선사항이 발견될 경우 이전 단계로 돌아가 피드백 과정을 수행할 수도 있습니다.
+단계를 거쳐 순차적으로 진행하는 하향식(Top-Down) 방법론으로, 현재 단계가 완료되어야 다음 단계로 진행할 수 있습니다. 하지만 문제나 개선사항이 발견될 경우 이전 단계로 돌아가 피드백 과정을 수행할 수도 있습니다.
+
+**특징:**
 
 - 각 단계가 명확하게 정의되어 있으며, 순차적으로 진행됩니다.
 - 문서화가 잘 되어 있어 진행 상황을 추적하고 관리하기 용이합니다.
@@ -69,3 +72,83 @@ top:
 ![Waterfall model](/assets/images/ds/waterfall.png)
 
 출처: [Data Science PM - What is Waterfall?](https://www.datascience-pm.com/waterfall/)
+
+### 프로토타입 모델(Prototype Model)
+사용자 중심의 개발 방법으로, 고객의 요구를 완전히 이해하지 못할 경우 프로토타입 모델을 적용됩니다. 일부분을 먼저 개발하고, 그 이후 사용자의 요구를 분석, 정당성 점검, 성능을 평가하는 등의 과정을 통해 개선 작업을 시행하며 점진적으로 시스템을 개발해 나가는 접근 방식입니다.
+
+**특징:**
+
+- 사용자의 피드백을 빠르게 반영하여 개발할 수 있습니다.
+- 요구사항이 불분명하거나 변경 가능성이 높은 프로젝트에 적합합니다.
+
+![notepub - Prototype Model](/assets/images/ds/protoptyping.webp)
+출처: [noteput - Prototyping Model](https://notepub.io/notes/software-engineering/software-development-life-cycle/sdlc-prototyping-model/)
+
+### 나선형 모델(Spiral Model)
+반복을 통해 점증적으로 개발하는 측면에서 프로토타입 모델과 유사하지만, 사용자의 요구에 초점을 맞추기보다 위험요소를 사전에 제거한다는 것에 초점을 둡니다. 위헌 분석을 반복적으로 수행하며, 각 반복 단계에서 프로토타입을 개발하고 검토합니다. 
+
+**특징:**
+
+- 위험 관리에 효과적으며, 복잡한 프로젝트에 적합합니다.
+- 초기 시도 프로젝트에 적용이 용이하지만, 관리 체계를 효과적으로 갖추지 못하면 복잡도가 상승합니다.
+- 반복적인 개발과 위험 분석으로 인해 개발 기간이 길어질 수 있습니다.
+
+![Spiral Model](/assets/images/ds/spiral-model.webp)
+출처: [bdtask - Spiral Model For Software Development- A Risky-Driven Model](https://www.bdtask.com/blog/spiral-model-for-software-development)
+
+### 계층적 프로세스 모델(Hierarchical Process Model)
+일반적으로 분석 방법론은 계층적 프로세스 모델의 형태로 구성됩니다. 계층적 프로세스 모델은 최상의 계층인 몇 개의 단계로 구성되어 있고 하나의 단계는 여러 개의 태스크로 구성되고 하나의 태스크는 여러 개의 스텝으로 구성됩니다. 스텝은 WBS(Wrok Breakdown Structure)의 워크패키지에 해당하며, '입력(input) - 처리 및 도구(Process & Tool) - 출력(Output)'으로 구성된 단위 프로세스입니다.
+
+**특징:** 
+
+- 프로젝트를 체계적으로 관리하고 진행할 수 있습니다.
+- 각 단계, 태스크, 스텝별로 명확한 산출물을 정의하여 품질 관리를 용이하게 합니다.
+- 프로젝트의 복잡도를 낮추고 효율성을 높입니다. 
+
+**빅데이터 분석의 계측정 프로세스**
+
+| **단계(Phase)** | 프로세스 그룹을 통해 완성된 단계별 산출물 생성, 버전 관리 등을 통한 통제 필요 |
+| **태스크(Task)** | 단계를 구성하는 단위 활동, 물리적 또는 논리적 단위로 품질 검토의 항목이 될 수 있음 |
+| **스텝(Step)** | WBS의 워크패키지에 해당하고, 입력자료, 처리 및 도구, 출력 자료로 구성된 단위 프로세스 |
+
+![Hierarchical Process Model](/assets/images/ds/hierarchical-process-model.webp)
+출처: [Medium - Hierarchical Models for Data and Policy, and a Walk-through Tutorial!](https://medium.com/data-policy/hierarchical-models-for-data-and-policy-and-a-walk-through-tutorial-2341fd1b1a48)
+
+
+
+### 애자일 모델(Agile Model)
+짧은 주기의 개발과 빠른 피드백을 통해 고객의 요구사항 변화에 유연하게 대응하는 방법론입니다. 스크럼(Scrum), 칸반(Kanban) 등의 다양한 방법론이 있습니다. 변화에 민감하고 빠른 개발이 필요한 프로젝트에 적합합니다.
+
+
+## 3. 전통적인 분석 방법론 두 가지 
+
+---
+
+### KDD 분석 방법론
+
+KDD(Knowledge Discovery in Databases)는 Usama M. Fayyad(American Data scientist, 1965)에 의해 고안된 분석 방법론 중 하나로, 데이터베이스에서 의미 있는 지식을 탐색하는 체계적인 프로세스입니다. 데이터 마이닝(Data Mining)을 포함하며, 기계 학습(Machine Learning), 인공지능(Artificial Intelligence), 패턴 인식(Pattern Recognition), 시각화(Visualization) 등 다양한 분야에 응용될 수 있는 구조를 가지고 있습니다.
+
+**주요 특징:**
+
+- 프로세스 중심: 데이터에서 지식을 발견하는 전체 과정을 체계적으로 관리합니다.
+- 다양한 기술 통합: 데이터 마이닝, 기계 학습, 통계 등 다양한 분석 기술을 활용합니다.
+- 지식 발견 목표: 데이터에서 유용한 패턴과 정보를 찾아내어 의사 결정에 활용합니다. 
+
+#### KDD 분석 방법론 프로세스
+
+1. **데이터 선택(Selection):** 비즈니스 도메인에 대한 이해와 프로젝트 목표 설정이 필수이며, 분석에 필요한 데이터를 선택하고 타겟 데이터(target data)를 생성합니다.
+2. **데이터 전처리(Preprocessing):** 선택된 데이터의 잡음(Noise), 이상값(Outlier), 결측치(Missing Value)를 제거하거나 의미 있는 데이터로 정제합니다. 추가로 요구되는 데이터셋이 있다면 데이터 선택 프로세스를 다시 실행합니다. 
+3. **데이터 변환(Transformation):** 분석 목적에 맞는 형태로 데이터를 변환하고 필요한 변수를 생성/선택하고 데이터의 차원을 축소하며, 학습용 데이터(training data set)와 검증용 데이터(test data set)로 분리합니다. 
+4. **데이터 마이닝(Data Mining):** 변환된 데이터에서 패턴을 발견하기 위해 학습용 데이터를 이용하여 분석 목적에 맞는 데이터 마이닝 기법을 선택하고 적절한 알고리즘을 적용합니다. 필요에 따라 전처리와 변환 프로세스도 추가합니다. 
+5. **패턴 평가(Evaludation):** 분석 목적과 일치성을 확인하고 평가합니다. 발견한 지식을 업무에 활용하기 위한 방안을 마련합니다. 
+6. **지식 표현(Knowledge Representation):** 추출된 지식을 사용자가 이해하기 쉬운 형태로 시각화하거나 보고서로 작성합니다.
+
+> 데이터 마이닝(Data Mining): 대규모 데이터 집합에서 유용한 패턴이나 정보를 추출하는 기술입니다.
+> - 분류(Classification), 회귀(Regression), 군집화(Clustering), 연관 규칙 학습(Association Rule Learning) 등 다양한 기법이 사용됩니다.  
+
+
+![KDD Process](/assets/images/ds/kdd.gif)
+출처: [Medium - KDD Process in Data Science: A Beginner’s Guide](https://www2.cs.uregina.ca/~dbd/cs831/notes/kdd/1_kdd.html)
+
+### CRISP-DM 분석 방법론 
+CRISP-DM(Cross Industry Standard Process for Data Mining) 분석방법론은 앞의 KDD 분석 방법론과 비슷하나, 약간 더 세분되어 있다는 점이 차이점입니다. CRISP-DM은 1999년 유럽연합에서 발표된 계층적 프로세스 모델입니다. 다른 계층적 프로세스 모델은 단계, 태스크, 스텝 3개의 레벨로 구성되어 있지만 CRISP-DM 분석 방법론은 단계, 일반화 태스크, 세분화 태스크, 프로세스 실행의 4개의 레벨과 업무 이해, 데이터 이해, 데이터 분지, 모델링, 평가, 전개의 6단계로 구성되어 있습니다.

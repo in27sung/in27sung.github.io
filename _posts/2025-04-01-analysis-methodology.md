@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 분석 방법론
-subtitle: 과목 IⅠ 제1장 데이터 분석 기획의 이해
+subtitle: 제1장 데이터 분석 기획의 이해
 author: Insung
 categories: [ADsP]
-tags: [ADsP, Big Data, Data Science]
+tags: [ADsP, Big Data, Data Science, 과목 IⅠ 데이터 분석 기획]
 top:
 ---
 
@@ -13,6 +13,8 @@ top:
 [제1절 분석 기획 방향성 도출](/adsp/2025/03/31/analysis-planning-direction.html)
 
 [제2절 분석 방법론](/adsp/2025/04/01/analysis-methodology.html)
+
+[제2-1절 빅데이터 분석 방법론](/adsp/2025/04/02/big-data-analysis-methodology.html)
 
 [제3절 분석 과제 발굴](/adsp/2025/04/01/analysis-task-discovery.html)
 
@@ -151,4 +153,24 @@ KDD(Knowledge Discovery in Databases)는 Usama M. Fayyad(American Data scientist
 출처: [Medium - KDD Process in Data Science: A Beginner’s Guide](https://www2.cs.uregina.ca/~dbd/cs831/notes/kdd/1_kdd.html)
 
 ### CRISP-DM 분석 방법론 
-CRISP-DM(Cross Industry Standard Process for Data Mining) 분석방법론은 앞의 KDD 분석 방법론과 비슷하나, 약간 더 세분되어 있다는 점이 차이점입니다. CRISP-DM은 1999년 유럽연합에서 발표된 계층적 프로세스 모델입니다. 다른 계층적 프로세스 모델은 단계, 태스크, 스텝 3개의 레벨로 구성되어 있지만 CRISP-DM 분석 방법론은 단계, 일반화 태스크, 세분화 태스크, 프로세스 실행의 4개의 레벨과 업무 이해, 데이터 이해, 데이터 분지, 모델링, 평가, 전개의 6단계로 구성되어 있습니다.
+CRISP-DM(Cross Industry Standard Process for Data Mining) 분석 방법론은 데이터 마이닝 프로젝트를 수행하기 위한 산업 표준 프로세스 모델입니다. KDD 분석 방법론과 유사하지만, 더 세분화된 단계와 유연성을 제공합니다. 1999년 유럽 연합에서 발표된 계층적 프로세스 모델로, 다른 계층적 프로세스 모델은 단계, 태스크, 스텝 3개의 레벨로 구성되어 있지만 CRISP-DM 분석 방법론은 4개의 레벨과 업무 이해, 데이터 이해, 데이터 분지, 모델링, 평가, 전개의 6단계로 구성되어 있습니다.
+
+**주요 특징:**
+
+- 산업 표준: 데이터 마이닝 프로젝트를 위한 표준 방법론으로 널리 사용됩니다.
+- 유연성: 각 단계는 순차적으로 진행될 수도 있고, 필요에 따라 이전 단계로 돌아가 반복적으로 수행될 수도 있습니다. 
+- 실용성: 실제 비즈니스 환경에서 데이터 마이닝 프로젝트를 성공적으로 수행하기 위한 실용적인 지침을 제공합니다.
+- 계층적 프로세스: 단계, 일반화 태스크, 세분화 태스크, 프로세스 실행의 4개의 레벨로 구성됩니다.
+
+
+#### CRIP-DM 분석 방법론 프로세스
+
+1. **업무 이해(Business Understanding):** 프로젝트 목표와 요구사항을 비즈니스 관점에서 이해하며, 도메인 지식을 바탕으로 데이터 마인이 문제를 정의하고 초기 프로젝트 계획을 수립합니다. 주요 태스크로는 업무 목표 파악, 상황 평가, 데이터 마이닝 목표 설정, 프로젝트 계획 수립이 있습니다.
+2. **데이터 이해(Data Understanding):** 분석에 필요한 데이터를 수집하고 데이터의 특성을 파악합니다. 데이터의 품질 문제를 식별하고 데이터에 숨겨진 인사이트를 발견합니다. 주요 태스크로는 초기 데이터 수집, 데이터 기술 분석 및 설명, 데이터 탐색, 데이터 품질 검증이 있습니다.
+3. **데이터 준비(Data Preparation):** 모델링에 적합한 형태로 데이터를 정제하고 변환합니다. 데이터 정제, 통합, 변환, 포맷팅 등 다양한 저처리 작업을 수행합니다. 주요 태스크로는 데이터 선택, 데이터 정제, 데이터 통합, 데이터 포맷팅이 있습니다. 
+4. **모델링(Modeling):** 적절한 모델링 기법과 알고리즘을 선택하여 모델을 구축합니다. 모델 파라미터를 최적화하고 모델의 성능을 평가합니다. 주요 태스크로는 모델링 기법 선택, 모델 테스트 계획 설계, 모델 작성 및 구축, 모델 평가가 있습니다.
+5. **평가(Evaluation):** 구축된 모델이 프로젝트 목표에 부합하는지 평가합니다. 모델의 성능을 비즈니스 관점에서 평가하고 모델의 활용 방안을 검토합니다. 주요 태스크로는 분석 결과 평가, 모델링 과정 평가, 모델 적용성 평가가 있습니다.
+6. **전개(Deployment):** 구축된 모델을 실제 업무 환경에 적용합니다. 모델의 운영 및 유지보수 계획을 수립하고 프로젝트 결과를 보고합니다. 주요 태스크로는 전개 계획 수립, 모니터링 및 유지보수 계획 수립, 프로젝트 종료 보고서 작성, 프로젝트 리뷰가 있습니다. 
+
+![CRISP-DM](/assets/images/ds/crisp-dm.webp)
+출처: [Medium - Understanding CRISP-DM and its importance in Data Science projects](https://www.datascience-pm.com/crisp-dm-2/)

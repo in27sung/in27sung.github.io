@@ -14,7 +14,9 @@ top:
 
 [제2절 분석 방법론](/adsp/2025/04/01/analysis-methodology.html)
 
-[제3절 분석 과제 발굴](/adsp/2025/04/01/analysis-task-discovery.html)
+[제2-1절 빅데이터 분석 방법론](/adsp/2025/04/02/big-data-analysis-methodology.html)
+
+[제3절 분석 과제 발굴](/adsp/2025/04/04/analysis-task-discovery.html)
 
 [제4절 분석 프로젝트 관리 방안](/adsp/2025/04/02/project-management-plan.html)
 

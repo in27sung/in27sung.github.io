@@ -8,11 +8,6 @@ tags: [Data Science, Google, Get Started with Python]
 top:
 ---
 
-<video controls width="100%" style="max-width: 720px;">
-  <source src="https://d3c33hcgiwev3.cloudfront.net/kYn9NbZpTjaC3bUse0ZfIA.processed/full/720p/index.mp4?Expires=1743811200&Signature=Dy72yLjaf3ZSjgvUh~8zaO4nj-DfYjqiLFGy7O-aYbFv9aNmMYGU3XZ1BQ-g9NX2VSEhUDnLBY93hLdQRKPiVjyT1V4GRzCPvmQmXhOe3W58qy4aEmkODU6nnjja1KtKpckEYGUupHXctqF4YfEtBDgK65z2AG3DgJQZJNdcNPw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 Jupyter Notebook is an open-source web application for creating and sharing documents containing live code, mathematical formulas, visualisations, and text. This is a great tool to develop and present code in a standardised text block format that is interactive and shareable. You can create code, mathematical formulas, data visulaisations, and even freestyle text-all in Jupyter notebooks!
 
 You will be using Jupyter notebooks to write, execute, and present your own code throughout this program. This reading will guide you through using your own notebook.

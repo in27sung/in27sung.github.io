@@ -3,6 +3,7 @@ layout: post
 title: 빅데이터 분석 방법론
 subtitle: 제1장 데이터 분석 기획의 이해
 author: Insung
+excerpt_image: /assets/images/ADsP/bigdata-analysis-methodology.png
 categories: [ADsP]
 tags: [ADsP, Big Data, Data Science, 과목 IⅠ 데이터 분석 기획]
 top:
@@ -16,7 +17,7 @@ top:
 
 [제2-1절 빅데이터 분석 방법론](/adsp/2025/04/02/big-data-analysis-methodology.html)
 
-[제3절 분석 과제 발굴](/adsp/2025/04/01/analysis-task-discovery.html)
+[제3절 분석 과제 발굴](/adsp/2025/04/04/analysis-task-discovery.html)
 
 [제4절 분석 프로젝트 관리 방안](/adsp/2025/04/02/project-management-plan.html)
 
@@ -35,14 +36,14 @@ top:
 빅데이터 분석 방법론은 분석 기획, 데이터 준비, 데이터 분석, 시스템 구현, 평가 및 전개의 5개 단계와 각각의 태스크와 스텝이 순차적으로 진행되며, 필요에 따라 데이터 준비 단계와 데이터 분석 단계가 피드백을 주고받을 수 있습니다. 
 
 
-![Big Data Analysis Methodology](/assets/images/ds/bigdata-hierarchical-process.png)
+![Big Data Analysis Methodology Hierarchical Process](/assets/images/ds/bigdata-hierarchical-process.png)
 
 
 ### 빅데이터 분석 방법론 단계별 상세화 (태스크 및 스텝 포함)
 
 빅데이터 분석 방법론의 각 단계를 태스크와 스텝으로 상세화하여 체계적인 분석 프로세스를 구축할 수 있습니다. 아래는 각 단계를 태스크와 스텝으로 분해한 예시입니다.
 
-#### Phase 1 분석 기획 (Analysis Planning)
+#### Phase 1 분석 기획 (Planning)
 
 - **Task 1 비즈니스 이해 및 범위 설정 (Business Understanding & Scope Setting)**
     - Step 1.1 비즈니스 이해(문제 정의) (Business Problem Definition): 분석 대상인 업무 도메인에 대한 이해
@@ -55,6 +56,8 @@ top:
         - 출력 자료: 프로젝트 범위 정의서(SOW, Statement Of Work)<br>
 <br>
 
+> 요구사항 정의서: 개발이나 분석이 수행되길 원하는 고객이 무엇을 원하는지 정확히 파악하기 위해 작성하는 문서
+
 - **Task 2 프로젝트 정의 및 계획 수립 (Project Definition & Planning)**
     - Step 2.1 데이터 분석 프로젝트 정의 (Data Analysis Project Definition): 프로젝트 목표를 명확히 하기 위한 평가 기준을 설정
         - 입력 자료: 프로젝트 범위 정의서, 분석 목표
@@ -63,8 +66,10 @@ top:
     - Step 2.2 프로젝트 수행 계획 수립 (Project Execution Plan): 프로젝트 목적, 기대효과 프로젝트 관리방안 등 프로젝트 수행 계획서 작성
         - 입력 자료: 데이터 분석 프로젝트 정의서, 가용 자원, 모델 운영 이미지 설계서
         - 처리 및 도구: 일정 관리, 자원 할당, 커뮤니케이션 계획
-        - 출력 자료: 프로젝트 수행 계획서, WBS(Work Breakdown Structure)<br>
+        - 출력 자료: 프로젝트 수행 계획서, WBS<br>
 <br>
+
+> WBS(Work Breakdown Structure, 업무분업구조): 개발이나 분석을 수행하는 전체 과정을 수십 개, 수백 개 또는 수천 개의 작은 단위의 업무로 나누어 수행 담당자 및 수행 기간 등을 작성한 문서
 
 - **Task 3 프로젝트 위험 계획 수립 (Project Risk Planning)**
     - Step 3.1 데이터 분석 위험 식별 (Data Analysis Risk Identification): 프로젝트 진행 시 발생 가능한 위험 식별
@@ -76,7 +81,7 @@ top:
         - 처리 및 도구: 위험 대응 (정량적, 정성적) 전략 수립, 비상 계획 수립
         - 출력 자료: 위험 대응 관리 계획서
 
-#### Phase 2 데이터 준비 (Data Preparation)
+#### Phase 2 데이터 준비 (Preparation)
 
 - **Task 1 필요 데이터 정의(Required Data Definition)**
     - Step 1.1 필요 데이터 정의 (Required Data Definition): 다양한 데이터 소스로부터 필요 데이터 정의
@@ -88,6 +93,10 @@ top:
         - 처리 및 도구: 데이터 획득 방안 수립
         - 출력 자료: 데이터 획득 계획서<br>
 <br>
+
+> 개체-관계 다이어그램(ERD): 데이터와 개체의 관계를 그림과 글로 표현한 것으로, 효율적인 데이터 운영을 목적으로 하는 문서
+
+> 데이터 정의서: 다수의 인원으로 구성된 프로젝트를 수행할 때 변수 및 데이터를 생성한 작성자의 의도를 정의한 문서, 데이터의 일관성 유지를 목표로 함
 
 - **Task 2 데이터 스토어 설계 (Data Store Design)**
     - Step 2.1 정형 데이터 스토어 설계(Structured Data Store Design): 데이터의 효율적인 저장과 활용을 위한 정형 데이터 스토어 설계
@@ -111,46 +120,43 @@ top:
         - 출력 자료: 데이터 정합성 검토 결과 보고서<br>
 <br>
 
-* **Task 4 분석용 데이터셋 생성 및 데이터 품질 관리 (Analysis Dataset Creation & Data Quality Management)**
-    * Step 4.1 분석용 데이터셋 생성 (Analysis Dataset Creation)
-        * 입력 자료: 수집된 데이터, 데이터 변환 규칙
-        * 처리 및 도구: 데이터 전처리 도구, 데이터 변환 프로세스
-        * 출력 자료: 분석용 데이터셋
-    * Step 4.2 데이터 품질 관리 (Data Quality Management)
-        * 입력 자료: 분석용 데이터셋, 데이터 품질 기준
-        * 처리 및 도구: 데이터 품질 관리 도구, 데이터 품질 모니터링
-        * 출력 자료: 데이터 품질 관리 보고서
-
-#### Phase 3 데이터 분석 (Data Analysis)
+#### Phase 3 데이터 분석 (Data Analysing)
 
 - **Task 1 분석용 데이터 준비(Analysis Data Preparation)**
-    - Step 1.1: 정형 데이터 준비 (Structured Data Preparation)
+    - Step 1.1: 분석용 데이터셋 준비 (Structured Dataset Preparation)
         - 입력 자료: 정형 데이터셋, 데이터 정의서, 데이터 스토어
         - 처리 및 도구: 데이터 선정, 분할, 샘플링, 필터링, 통합, 변환
         - 출력 자료: 분석용 정형 데이터셋
-    - Step 1.2: 비정형 데이터 준비 (Unstructured Data Preparation)
-        - 입력 자료: 비정형 데이터셋, 텍스트/이미지/비디오 데이터, 데이터 정의서, 데이터 스토어
-        - 처리 및 도구: 토큰화, 불용어 제거, 형태소 분석, 어간/키워드 추출, 텍스트 정규화, 이미지/비디오 전처리(크기 조정, 노이즈 제거, 특징 추출)
-        - 출력 자료: 분석용 비정형 데이터셋<br>
 <br>
 
-- **Task 2 탐색적 분석 (Exploratory Analysis)**
-    - Step 2.1 탐색적 데이터 분석 (EDA): 다양한 관점에서 데이터의 분포 및 특성 확인
+- **Task 2 텍스트 분석 (Exploratory Analysis)**
+    - Step 2.1 텍스트 데이터 확인 및 추출: 텍스트 분석에 필요한 데이터 확인 및 데이터 추출
+        - 입력 자료: 프로젝트 정의서, 프로젝트 수행 계획서, 데이터 정의서, 데이터 스토어
+        - 처리 및 도구: 분석용 텍스트 데이터 확인, 텍스트 데이터 추출
+        - 출력 자료: 데이터 탐색 보고서
+    - Step 2.2 텍스트 데이터 분석: 추출된 텍스트 데이터를 분석 도구로 적재하여 다양한 기법으로 분석 및 모델 구축 =
+        - 입력 자료: 분석용 텍스트 데이터 용어사전
+        - 처리 및 도구: 토큰화, 불용어 제거, 형태소 분석, 어간/키워드 추출, 텍스트 정규화, 이미지/비디오 전처리(크기 조정, 노이즈 제거, 특징 추출)
+        - 출력 자료: 텍스트 분석 보고서<br>
+<br>
+
+- **Task 3 탐색적 분석 (Exploratory Analysis)**
+    - Step 3.1 탐색적 데이터 분석 (EDA): 다양한 관점에서 데이터의 분포 및 특성 확인
         - 입력 자료: 분석용 데이터셋
         - 처리 및 도구: EDA 도구, 통계 분석 (기술통계·추론통계), 변수 간 연관성 분석 (상관 분석, 교차 분석), 데이터 분포 확인 (히스토그램, 박스 플롯), 이상치 탐지
         - 출력 자료: 데이터 탐색 보고서
-    - Step 2.2 탐색적 데이터 시각화 (Data visulisation): 데이터 시각화는 탐색적 데이터 분석을 위해 활용
+    - Step 3.2 탐색적 데이터 시각화 (Data visulisation): 데이터 시각화는 탐색적 데이터 분석을 위해 활용
         - 입력 자료: 분석용 데이터셋, 시각화 도구
         - 처리 및 도구: 데이터 시각화 (막대 그래프, 선 그래프, 산점도), 인포그래픽, 통계 시각화
         - 출력 자료: 데이터 시각화 보고서<br>
 <br>
 
-- **Task 3 모델링 (Modeling)**
-    - Step 3.1 데이터 분할 (Data Partitioning): 모델의 과적합 문제 해결과 모델의 검증력을 테스트하기 위한 데이터 분할 
+- **Task 4 모델링 (Modeling)**
+    - Step 4.1 데이터 분할 (Data Partitioning): 모델의 과적합 문제 해결과 모델의 검증력을 테스트하기 위한 데이터 분할 
         - 입력자료: 분석용 데이터셋
         - 처리 및 도구: 데이터 분할 패키지
         - 출력자료: 훈련용 데이터셋, 테스트용 데이터셋
-    - Step 3.2 정형 데이터 모델링 (Structured Data Modeling)
+    - Step 4.2 정형 데이터 모델링 (Structured Data Modeling)
         - 입력자료: 분석용 데이터셋, 데이터 마이닝 도구.
         - 처리 및 도구: 
             1. 분류: 의사 결정 트리, 로지스틱 회귀 
@@ -158,67 +164,73 @@ top:
             3. 군집화: K-평균, 계층적 군집화
             4. 연관 규칙 학습: Apriori, FP-Growth
         - 출력자료: 정형 데이터 마이닝 모델
-    - Step 3.3 텍스트 데이터 모델링 (Text Data Modeling)
+    - Step 4.3 텍스트 데이터 모델링 (Text Data Modeling)
         - 입력자료: 분석용 텍스트 데이터, 텍스트 마이닝 도구
         - 처리 및 도구: 텍스트 분류, 감성 분석, 토픽 모델링, 텍스트 요약, 개체명 인식
         - 출력자료: 텍스트 분석 결과 보고서
-    - step 3.4 모델 적용 및 운영 방안 (Model Deployment & Monitoring): 모델 적용을 위한 상세한 알고리즘 설명 작성과 모델의 운영 모니터링 방안 수립 
+    - step 4.4 모델 적용 및 운영 방안 (Model Deployment & Monitoring): 모델 적용을 위한 상세한 알고리즘 설명 작성과 모델의 운영 모니터링 방안 수립 
         - 입력자료: 모델링 결과 보고서
         - 프로세스 및 도구: 모니터링 방안 수립, 알고리즘 설명서 작성
         - 출력자료: 모델 운영 방안 보고서<br>
 <br>
 
-- **Task 4 모델링 및 평가/검증 (Modeling & Evaluation/Validation)**
-    - Step 4.1: 모델링 (Modeling)
-        - 입력자료: 분석용 데이터셋, 모델링 도구
-        - 처리 및 도구: 모델링 알고리즘 선택, 모델 학습 및 튜닝
-        - 출력자료: 모델링 결과
-    - Step 4.2: 모델 평가/검증 (Evaluation/Validation)
-        - 입력자료: 모델링 결과, 검증 데이터셋
-        - 처리 및 도구: 모델 성능 평가 지표, 교차 검증
-        - 출력자료: 모델 평가/검증 보고서
+- **Task 5 모델링 및 평가/검증 (Modeling & Evaluation/Validation)**
+    - Step 5.1 모델 평가(Evaluation): 모델 평가 기준에 따른 모델의 객관적인 평가 진행
+        - 입력자료: 모델링 결과 보고서, 평가용 데이터
+        - 처리 및 도구: 모델 평가, 모델 품질관리, 모델 개선작업 
+        - 출력자료: 모델 평가 보고서
+    - Step 5.2 모델 검증 (Validation): 모델의 적용성 검증 작업과 실제 모델 품질을 최종 점검
+        - 입력자료: 모델링 결과 보고서, 모델 평가 보고서, 검증용 데이터 
+        - 처리 및 도구: 모델 성능 평가 지표, 모델 (교차) 검증, 
+        - 출력자료: 모델 검증 보고서
 
-#### Phase 4 시스템 구현 (System Implementation)
+#### Phase 4 시스템 구현 (Implementation)
 
-* **태스크 1: 분석 모델 기반 시스템 설계 및 구현 (Analysis Model-based System Design & Implementation)**
-    * 스텝 1.1: 분석 모델 기반 시스템 설계 (Analysis Model-based System Design)
-        * 입력자료: 모델링 결과, 시스템 요구사항.
-        * 처리 및 도구: 시스템 아키텍처 설계, API 설계.
-        * 출력자료: 시스템 설계서
-    * 스텝 1.2: 시스템 구현 (System Implementation)
-        * 입력자료: 시스템 설계서, 개발 도구.
-        * 처리 및 도구: 시스템 개발, 코드 리뷰.
-        * 출력자료: 구현된 시스템
-* **태스크 2: 시스템 테스트 및 운영 환경 구축 (System Test & Operation Environment Setup)**
-    * 스텝 2.1: 시스템 테스트 (System Test)
-        * 입력자료: 구현된 시스템, 테스트 케이스.
-        * 처리 및 도구: 단위 테스트, 통합 테스트, 성능 테스트.
-        * 출력자료: 시스템 테스트 결과 보고서
-    * 스텝 2.2: 운영 환경 구축 (Operation Environment Setup)
-        * 입력자료: 구현된 시스템, 운영 환경 요구사항.
-        * 처리 및 도구: 서버 구축, 배포 자동화.
-        * 출력자료: 구축된 운영 환경
+- **Task 1 시스템 설계 및 구현 (System Design & Implementation)**
+    - Step 1.1 시스템 분석 및 설계 (System Analysis & Design): 가동 중인 시스템 분석 및 구축 설계 프로세스 진행
+        - 입력자료: 알고리즘 설명서, 운영 중인 시스템 설계서
+        - 처리 및 도구: 정보 시스템, 개발 방법론
+        - 출력자료: 시스템 분석 및 설계서
+    - Step 1.2: 시스템 구현 (System Implementation): 새로운 시스템 구축 및 가동 중인 운영 시스템의 커스터마이징을 통하여 설계된 모델을 구현
+        - 입력자료: 시스템 분석 및 설계서, 알고리즘 설명서
+        - 처리 및 도구: 시스템 통합개발도구, 프로그래밍 언어 패키지 리뷰
+        - 출력자료: 구현된 시스템
+
+- **Task 2 시스템 테스트 및 운영 환경 구축 (System Test & Operation Environment Setup)**
+    - Step 2.1 시스템 테스트 (System Test): 구축된 시스템의 검증을 위하여 단위 테스트, 통합 테스트, 시스템 테스트 등을 실시
+        - 입력자료: 구현된 시스템, 시스템 테스트 케이스 계획서
+        - 처리 및 도구: 단위 테스트, 통합 테스트, 성능 테스트, 품질관리 활동
+        - 출력자료: 시스템 테스트 결과 보고서
+    - Step 2.2 시스템 운영 환경 구축 (System Operation Environment Setup): 구현된 시스템의 지속적인 활용을 위한 시스템 운영자, 사용자 교육 실시 및 시스템 운형 계획 수립
+        - 입력자료: 구현된 시스템 분석 및 설계서, 운영 환경 요구사항
+        - 처리 및 도구: 운영계획 수립, 운영자 및 사용자 교육
+        - 출력자료: 운영자 메뉴얼, 사용자 메뉴얼, 시스템 운영 계획서
 
 **5. 평가 및 전개 (Evaluation & Deployment)**
 
-* **태스크 1: 분석 결과 평가 및 모델 발전 계획 수립 (Analysis Result Evaluation & Model Development Plan)**
-    * 스텝 1.1: 분석 결과 평가 (Analysis Result Evaluation)
-        * 입력자료: 모델 평가/검증 보고서, 비즈니스 목표.
-        * 처리 및 도구: 비즈니스 영향 분석, 모델 성능 평가.
-        * 출력자료: 분석 결과 평가 보고서
-    * 스텝 1.2: 모델 발전 계획 수립 (Model Development Plan)
-        * 입력자료: 분석 결과 평가 보고서, 모델 개선 아이디어.
-        * 처리 및 도구: 모델 개선 방향 설정, 모델 재학습 계획.
-        * 출력자료: 모델 발전 계획서
-* **태스크 2: 프로젝트 성과 보고 및 시스템 전개 (Project Performance Report & System Deployment)**
-    * 스텝 2.1: 프로젝트 성과 보고 (Project Performance Report)
-        * 입력자료: 분석 결과 평가 보고서, 프로젝트 결과.
-        * 처리 및 도구: 프로젝트 성과 요약, 보고서 작성.
-        * 출력자료: 프로젝트 성과 보고서
-    * 스텝 2.2: 시스템 전개 (System Deployment)
-        * 입력자료: 구현된 시스템, 운영 계획.
-        * 처리 및 도구: 시스템 배포, 사용자 교육.
-        * 출력자료: 전개된 시스템
+- **Task 1 모델 발전 계획 수립 (Model Development Plan)**
+    - Step 1.1 분석 결과 평가 (Analysis Result Evaluation)
+        - 입력자료: 모델 평가/검증 보고서, 비즈니스 목표
+        - 처리 및 도구: 비즈니스 영향 분석, 모델 성능 평가
+        - 출력자료: 분석 결과 평가 보고서
+    - Step 1.2 모델 발전 계획 수립 (Model Development Plan): 지속적인 운영과 기능 향상을 위한 발전 계획 수립
+        - 입력자료: 분석 결과 평가 보고서, 모델 개선 아이디어, 프로젝트 산출물
+        - 처리 및 도구: 모델 개선 방향 설정, 모델 재학습 계획
+        - 출력자료: 모델 발전 계획서
 
-이러한 단계, 태스크, 스텝별 상세화는 프로젝트의 체계적인 관리를 가능하게 하며, 각 단계별 산출물을 명확히 정의하여 품질 관리를 용이하게 합니다.
+- **Task 2 프로젝트 성과 보고(Project Performance Report)**
+    - Step 2.1 프로젝트 성과 보고 (Project Performance Report): 프로젝트의 정량적/정성적 성과로 나누어 성과 평가서를 작성
+        - 입력자료: 분석 결과 평가 보고서, 프로젝트 결과 산출물
+        - 처리 및 도구: 프로젝트 성과 요약, 보고서 작성, 프로젝트 평가 기준
+        - 출력자료: 프로젝트 성과 보고서
+    - Step 2.2 프로젝트 종료: 프로젝트 과정 간 모든 산출물 및 프로세스를 지식 자산화하고 최종 보고서를 작성
+        - 입력자료: 프로젝트 성과 보고서
+        - 처리 및 도구: 프로젝트 지식자산화 작업, 프로젝트 종료
+        - 출력자료: 프로젝트 최종 보고서
 
+
+![Big Data Analysis Methodology](/assets/images/ADsP/bigdata-analysis-methodology.png)
+
+> 프로그램 목록(명세서): 개발이나 분석을 수행하는 중간 과정의 프로그램이나 모델을 관리하기 위한 문서
+
+> (클라우드) 자원 명세서: 개발이나 분석을 숭해하기 위한 컴퓨팅 자원을 명세한 것으로, CPU의 코어 수, 하드디스크 용량, 메모리 크기 등을 정의한 문서, 개발자들의 업무를 위한 장원 명세서와 실제 고객에게 배포될 자원 명세서는 다른것이 일반적입니다. 

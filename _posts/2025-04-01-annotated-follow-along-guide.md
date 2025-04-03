@@ -217,6 +217,11 @@ sorted(new_list)
 <a name="2"></a>
 ## 2. [Jupyter Notebooks](https://www.coursera.org/learn/get-started-with-python/lecture/2l42i/jupyter-notebooks)
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/kYn9NbZpTjaC3bUse0ZfIA.processed/full/720p/index.mp4?Expires=1743811200&Signature=Dy72yLjaf3ZSjgvUh~8zaO4nj-DfYjqiLFGy7O-aYbFv9aNmMYGU3XZ1BQ-g9NX2VSEhUDnLBY93hLdQRKPiVjyT1V4GRzCPvmQmXhOe3W58qy4aEmkODU6nnjja1KtKpckEYGUupHXctqF4YfEtBDgK65z2AG3DgJQZJNdcNPw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 **NOTE:** The import statements cell must be run before running some of the following cells. This setup step was not shown in the instructional video, but you will learn about import statements later in this course.
 
 
@@ -267,9 +272,7 @@ ax.set_zlabel('z')
 ax.view_init(35, -65)
 ```
 
-
-![png](output_22_0.png)
-
+![png](/assets/images/kaggle/output_22_0.png)
 
 **NOTE:** The following cells use markdown (like this cell) to create formatted text like headers and bullets, tables, and mathematical equations. You can select any cell and enter into edit mode to view the markdown text. Then run the cell to view the rendered output.
 
@@ -292,6 +295,10 @@ $$
 <a name="3"></a>
 ## 3. [Object-oriented programming](https://www.coursera.org/learn/get-started-with-python/lecture/1SJMN/object-oriented-programming) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/HadNfRTLQyeHe-XDYqzegg.processed/full/720p/index.mp4?Expires=1743811200&Signature=ZiCzow~e0CsVp5YBntrVDpCAyQQz1ytgUywadAsM2J~uq62VwfSbBRX6X8vd72kqKL0EqIzWEiQCzUd1ghelR4VwVlof6wtr4EJqm~Y6RgfY3e8twAY7Cdf80OVX7jklZP-TS9g1aLkDrMi-oC24R-JrHNHzlBxjG6hdAyj-WEo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Assign a string to a variable and check its type.

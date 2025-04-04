@@ -127,7 +127,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: divide($header-height, 1.5);
+      height: divide($header-height, 1.8);
       margin-right: 5px;
       
       @include media-query($on-laptop) {

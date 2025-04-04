@@ -483,6 +483,10 @@ planets.columns
 <a name="4"></a>
 ## 4. [Variables and data types](https://www.coursera.org/learn/get-started-with-python/lecture/k3ex2/variables-and-data-types) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/RL55UtUeS0mb1nAi8hD1zA.processed/full/720p/index.mp4?Expires=1743897600&Signature=h9JziDACo48zDV9VQmgv1JLgAWY2ou0Hxsmlo5sjFiCPPJETdXXPioibpZTiw80EHT0Bb492aR1rDiIFJXJqSonVJ5zO1C5uTuqEnnB4r1UqsEdkawBnpv5DOun57LWNMRPwPjQf5WfWP1US0JdkqaKSRhvvp4orJc1gw4UQSXc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Assign a list containing players' ages.
@@ -571,6 +575,10 @@ max_age - min_age
 <a name="5"></a>
 ## 5. [Create precise variable names](https://www.coursera.org/learn/get-started-with-python/lecture/fB03O/create-precise-variable-names) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/m3pGQD7wSW-1_mPzHPg26w.processed/full/720p/index.mp4?Expires=1743897600&Signature=g2CHDSFbbI~Bgue6laO4Peia--JAazZNV1LTfQ1ZQ2SKnryml7Kdo4P-r80Bz-n54aNohK~yWqLhyLwym4c6GG8lm-JpXz4iM7N85Dt434JMfvssNoauYH1sM-PRuEtAP9xWwgjYDMGpPXbykkHCWLK0qiLqVL1qO8hUWRit4Uk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Trying to assign a value to a reserved keyword will return a syntax error.

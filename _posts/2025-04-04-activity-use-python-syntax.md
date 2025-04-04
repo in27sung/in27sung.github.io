@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python versus other programming languages
+title: "Activity: Use Python Syntax"
 subtitle: Use Python syntax
 author: Insung
 categories: [Google Advanced Data Analytics]

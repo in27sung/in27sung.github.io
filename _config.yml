@@ -193,7 +193,7 @@ excerpt:
   default_image: /assets/images/default-image.png  # Default image when the image style is not none
   image_style: z          # Image layout style (It's value could be none, left, right, top, z, z-reverse)
   image_width: 38.2%      # Image default width
-  image_height: 180px     # Image default height
+  image_height: 160px     # Image default height
   text_size: 320          # Words default size
 
 # Pagination setting

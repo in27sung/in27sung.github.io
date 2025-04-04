@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Annotated follow-along guide: Hello, Python!"
-subtitle: Get Started with Python - The power of Python
+subtitle: The power of Python
 author: Insung
 categories: [Google Advanced Data Analytics]
-tags: [Data Science, Google]
+tags: [Data Science, Coursera, Get Started with Python]
 top:
 ---
 <video controls width="100%" style="max-width: 720px;">
@@ -640,6 +640,11 @@ esparagus = 'everyone loves some esparagus'
 
 <a name="6"></a>
 ## 6. [Data types and conversions](https://www.coursera.org/learn/get-started-with-python/lecture/z9zda/data-types-and-conversions)
+
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/D6SE0FP8TPWIQw3aq0SKUg.processed/full/720p/index.mp4?Expires=1743897600&Signature=BsjL5knXwufTg4NGxA~MKOeSmaFc~76ClvlLdGtDK7FHwszSJABX5rApWk1hy4dwk01AUi8VdP7gvjNx0jS1SG~Fdj1jSHKyV3K-gUb-mW2sL9jkZkarx3L69Kp2IDbFDNq29YWyn1ET47BJEudhGrAXt41j9Vtqq0s7DRW59r8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ```python

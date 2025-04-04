@@ -129,6 +129,7 @@ html {
       display: inline-block;
       height: divide($header-height, 1.8);
       margin-right: 5px;
+      margin-bottom: 0.8em;
       
       @include media-query($on-laptop) {
         height: divide($header-height, 1.8);

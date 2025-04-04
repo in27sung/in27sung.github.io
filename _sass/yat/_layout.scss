@@ -81,7 +81,7 @@ html {
     max-width: 100%;
     transition: 0.2s margin;
 
-    @include media-query(1024px) {
+    @include media-query(1085px) {
       margin: 0 1em;
       max-width: unset;
     }

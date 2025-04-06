@@ -7,11 +7,6 @@ categories: [Google Advanced Data Analytics]
 tags: [Data Science, Coursera, Get Started with Python]
 top:
 ---
-<video controls width="100%" style="max-width: 720px;">
-  <source src="https://d3c33hcgiwev3.cloudfront.net/AGuVcwrcTyOsgS6eH5ZlMw.processed/full/720p/index.mp4?Expires=1743638400&Signature=ayHdSU79sj7oHfpWiIzzCvNuPvDK23pItDkVH6ITJ9I0DCURJu2XSpYqAcGqHGZrk2VJqvQY3~FE-8iv4hp79WrlfQDbWlkOGMxHofRqI1Zmx4GyCt7YzYRCAjvI0OtS6CZeUPEuqrS3p6z8gPP-IQ8VPWXHPtxn2kXZv~YCbqQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<p class="source-text"><em>Source: "Discover more about Python" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 ## Annotated follow-along guide: Hello, Python!
 
@@ -36,7 +31,11 @@ To skip directly to the code for a particular video, use the following links:
 <a name="1"></a>
 ## 1. [Discover more about Python](https://www.coursera.org/learn/get-started-with-python/lecture/JC2zu/discover-more-about-python)
 
-
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/AGuVcwrcTyOsgS6eH5ZlMw.processed/full/720p/index.mp4?Expires=1743638400&Signature=ayHdSU79sj7oHfpWiIzzCvNuPvDK23pItDkVH6ITJ9I0DCURJu2XSpYqAcGqHGZrk2VJqvQY3~FE-8iv4hp79WrlfQDbWlkOGMxHofRqI1Zmx4GyCt7YzYRCAjvI0OtS6CZeUPEuqrS3p6z8gPP-IQ8VPWXHPtxn2kXZv~YCbqQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p class="source-text"><em>Source: "Discover more about Python" - Google Advanced Data Analytics Professional Certificate</em></p>
 
 ```python
 # Print to the console.

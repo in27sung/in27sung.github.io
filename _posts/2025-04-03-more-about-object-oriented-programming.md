@@ -4,7 +4,7 @@ title: More about object-oriented programming
 subtitle: The power of Python
 author: Insung
 categories: [Google Advanced Data Analytics]
-tags: [Data Science, Google, Get Started with Python]
+tags: [Data Science, Coursera, Get Started with Python]
 top:
 ---
 

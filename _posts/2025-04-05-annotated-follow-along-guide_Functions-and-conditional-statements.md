@@ -201,6 +201,10 @@ print(factorial(input_num))
 <a name="3"></a>
 ## 3. [Use comments to scaffold your code](https://www.coursera.org/learn/get-started-with-python/lecture/EKWJa/use-comments-to-scaffold-your-code)
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/NMaLXJBbSsCI9XrGEKYIAA.processed/full/720p/index.mp4?Expires=1744070400&Signature=JDyfNnPgFyJm4oOZjT~jW5YVnJcPeoMZoEC76IIMgf2lwZgUEPNHk53WrwLAX9odb8OHvMw~YltA4Wz-6bBCXmf2~s8FW3uqJNcSh1d~Axs2vP49WZ9HZUil1TYcACf62GmE1flNT4wAnArq6TQ03MN~M5WXZ00lbY7zvZ~z12o_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 def seed_calculator(fountain_side, grass_width):
@@ -237,51 +241,68 @@ seed_calculator(12, 2)
 <a name="4"></a>
 ## 4. [Make comparisons using operators](https://www.coursera.org/learn/get-started-with-python/lecture/JvbMh/make-comparisons-using-operators) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/ro0Ck9eoQKeD6yUuIEekAA.processed/full/720p/index.mp4?Expires=1744070400&Signature=Tpjnzi-khO56hc1y~IAsSlQB2wVniIM4-1McjsoellXEBrnCQ8PIDyESugdZz4AMcoFngJ4Bw3ubt96TwhjbMqyXmXMhJ7q2EuriTWZeFyYRIs1bHBRQCHQ4AqJeZ79WCEqR7q7~txuLMMUSCn-A5UljUOwcYYP~XE~S9AclIyk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # > checks for greater than
 print(10>1)
 ```
+    True
 
 
 ```python
 # == checks for equality
 print("cat" == "dog")
 ```
+    False
 
 
 ```python
 # != checks for inequality
 print(1 != 2)
 ```
-
+    True
 
 ```python
 # Some operators cannot be used between different data types.
 print(1 < "1")
 ```
+    ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+    <ipython-input-4-46cc2171c791> in <module>
+    1 # Some operators cannot be used between different data types.
+    ----> 2 print(1 < "1")
 
+    TypeError: '<' not supported between instances of 'int' and 'str'
 
 ```python
 # Letters that occur earlier in the alphabet evaluate to less than letters from later in the alphabet.
 # BOTH sides of an `and` statement must be true to return True.
 print("Yellow" > "Cyan" and "Brown" > "Magenta")
 ```
-
+    False
 
 ```python
 # An `or` statement will return True if EITHER side evaluates to True.
 print(25 > 50 or 1 != 2)
 ```
-
+    True
 
 ```python
 # `not` reverses Boolean evaluation of what follows it.
 print(not 42 == "Answer")
 ```
-
+    True
 <a name="5"></a>
 ## 5. [Use if/elif/else statements to make decisions](https://www.coursera.org/learn/get-started-with-python/lecture/6JsS8/use-if-elif-else-statements-to-make-decisions)
+
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/2rOmZ-9sSxS67WfA7Z3TXg.processed/full/720p/index.mp4?Expires=1744070400&Signature=CfSIUweJJmoz13pfHCg7Egp2ElcA17i-lvevbA0C~aS3KEpfxvTy7aRk-TmPE~y~ykE7YIxD5fBxJjJJcbuCiFmm~khWTzsDf7s-WXaGDYIe7FBvs09x-4LV9N0ccFhuFMUWb-r7sg0Hg8xwN0Pd5gOT7vSiTxznNiD1Hko6az4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ```python
@@ -306,7 +327,7 @@ def is_even(number):
 ```python
 is_even(19)
 ```
-
+    False
 
 ```python
 # Define a function that checks validity of username based on length.
@@ -323,5 +344,6 @@ def hint_username(username):
 ```python
 hint_username("ljñkljfñklasdjflkñadjglk{a")
 ```
+    Invalid username. Cannot exceed 15 characters.
 
 **Congratulations!** You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.

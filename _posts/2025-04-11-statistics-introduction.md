@@ -3,7 +3,7 @@ layout: post
 title: 통계학 개론
 subtitle: 제2장 통계분석
 author: Insung
-excerpt_image: /assets/images/ADsP/data-mart.png
+excerpt_image: /assets/images/ADsP/probability-distribution.png
 categories: [ADsP]
 tags: [ADsP, Big Data, Data Science, R, 과목 IⅠⅠ 데이터 분석]
 top:
@@ -109,7 +109,7 @@ $$
 - $\mathbb{R}$: 실수 집합
 
 
-### 확률분포 (Probability Distribution)
+#### 확률분포 (Probability Distribution)
 
 확률분포는 확률변수가 어떤 값을 가질 수 있으며, 그 각각의 값 혹은 구간에 **어떤 확률이 할당되는지**를 설명하는 수학적 규칙입니다. 확률변수가 이산형 혹은 연속형이냐에 따라 정의 방식이 달라집니다. 확률분포는 확률변수의 전체 행동을 설명하는 구조이며, 값의 분포 특성, 경향성, 불확실성의 형태를 모두 포함합니다.
 
@@ -125,9 +125,9 @@ $$
 	\int_{-\infty}^{\infty} f_X(x)\, dx = 1
 $$
 
-![Probability Distribution](../assets/images/ADsP/probability-distribution.png)
+![Probability Distribution](/assets/images/ADsP/probability-distribution.png)
 
-### 확률함수 (Probability Distribution)
+#### 확률함수 (Probability Distribution)
 확률함수는 확률변수의 값에 확률 또는 확률밀도를 할당하는 함수로, 이는 확률분포를 수학적으로 표한하는 도구 입니다. 확률변수의 유형에 따라 함수의 성격이 달라집니다.
 
 **정의 (Definition):**

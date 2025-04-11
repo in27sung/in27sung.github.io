@@ -62,14 +62,14 @@ def send_email(num_visits, visits_email):
 ```
 
 <details>
-  <summary><h4><strong>Hint 1</strong></h4></summary>
+  <summary><strong>Hint 1</strong></summary>
 
 Consider the syntax for defining a function. Remember: a function definition statement must include a `def` keyword, the function's name, and its arguments, followed by a colon.
 
 </details>
 
 <details>
-  <summary><h4><strong>Hint 2</strong></h4></summary>
+  <summary><strong>Hint 2</strong></summary>
 
 Recall Python's conditional and comparison operators.
 Check your indentation. Is your code indented properly?
@@ -77,7 +77,7 @@ Check your indentation. Is your code indented properly?
 </details>
 
 <details>
-  <summary><h4><strong>Hint 3</strong></h4></summary>
+  <summary><strong>Hint 3</strong></summary>
 
 One approach is to compare `num_visits` to `visits_email` using the `>=` comparator.
 If `num_visits >= visits_email`, print `Send email.` Otherwise, print `Not enough visits.`.
@@ -140,14 +140,14 @@ def send_email(num_visits, visits_email, visits_coupon):
 ```
 
 <details>
-  <summary><h4><strong>Hint 1</strong></h4></summary>
+  <summary><strong>Hint 1</strong></summary>
 
 Refer to what you've learned about conditional statements, logical operators, and comparison operators.
 
 </details>
 
 <details>
-    <summary><h4><strong>Hint 2</strong></h4></summary>
+    <summary><strong>Hint 2</strong></summary>
 
 Make sure your `if`, `elif`, and `else` statements are indented properly beneath the function's definition line.
 
@@ -158,7 +158,7 @@ Check syntax.
 </details>
 
 <details>
-  <summary><h4><strong>Hint 3</strong></h4></summary>
+  <summary><strong>Hint 3</strong></summary>
 
 One approach is to compare `num_visits` to both `visits_coupon` and `visits_email` using the `>=` comparator:
 

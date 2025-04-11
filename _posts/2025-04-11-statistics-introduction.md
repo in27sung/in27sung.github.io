@@ -154,12 +154,13 @@ $$
 	P(a \leq X \leq b) = \int_a^b f_X(x)\, dx, \quad \int_{-\infty}^{\infty} f_X(x)\, dx = 1
 $$
 
-> 기대값 (Expected Value)
-> - 이산형:  
-> $\mathbb{E}[X] = \sum_x x \cdot P(X = x)$
-> - 연속형:  
-> $\mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f_X(x)\, dx$  
+*기대값 (Expected Value)*  
+- 이산형:  
+$\mathbb{E}[X] = \sum_x x \cdot P(X = x)$
+- 연속형:  
+$\mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f_X(x)\, dx$    
 
-> 분산 (Variance)  
-> $\operatorname{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]$
+*분산 (Variance)*  
+
+$\operatorname{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2]$
 

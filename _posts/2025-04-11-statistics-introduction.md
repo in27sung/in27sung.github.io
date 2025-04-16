@@ -13,13 +13,15 @@ top:
 
 [제1절 통계학 개론](/adsp/2025/04/11/statistics-introduction.html)
 
-[제2절 기초 통계 분석](/adsp/2025/04/12/basic-statistics-analysis.html)
+[제2절 기초 통계 분석](/adsp/2025/04/13/basic-statistics-analysis.html)
 
-[제3절 다변량 분석](/adsp/2025/04/13/multivariate-analysis.html)
+- [t-검정](/adsp/2025/04/13/basic-statistic-analysis.html)
 
-[제4절 시계열 예측](/adsp/2025/04/14/time-series-prediction.html)
+[제3절 다변량 분석](/adsp/2025/04/14/multivariate-analysis.html)
 
-[제5절 주성분 분석](/adsp/2025/04/15/principal-component-analysis.html)
+[제4절 시계열 예측](/adsp/2025/04/15/time-series-prediction.html)
+
+[제5절 주성분 분석](/adsp/2025/04/16/principal-component-analysis.html)
 
 ---
 

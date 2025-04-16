@@ -180,6 +180,10 @@ print('\nI\'m done.')
 <a name="3"></a>
 ## 3. [Loops with multiple range parameters](https://www.coursera.org/learn/get-started-with-python/lecture/2VI1Y/loops-with-multiple-range-parameters) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/l9p8qKQoRF6jpjyOIbZGJg.processed/full/720p/index.mp4?Expires=1744588800&Signature=T83Sj4UMZ1uZGD1DOPeynyLPUXBUvKXd5SwdoENoc8HiyGXQTlzVAVSkS~KxVKa5jUUhR~xUIdUOv4mgxrcmlsb1yYbvKVNKN63gXmGG2QKxCStCDXHjfHzAXjoDExM6qsHYMvR8XpgTXWtbirw2IozQYNaFRsVD2lBK8kpRZ~k_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Use a for loop to calculate 9!
@@ -220,6 +224,10 @@ for x in range(0, 101, 10):
 <a name="4"></a>
 ## 4. [Work with strings](https://www.coursera.org/learn/get-started-with-python/lecture/k88nO/work-with-strings) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/wsF0i6BYQxaB7DGCzbNvTQ.processed/full/720p/index.mp4?Expires=1744588800&Signature=YsHw1AY3vXCEjIxX7CqT3K3A6fiZOhguWNtnXFwrEThQeYCG3RuNirZLl0ZJguwnXuKYy57ttUHoi2MT73cdgkbHqMPPyPl9FHPE7f-UIWfYquW1btAFlP67uHSZIgmfsc~rFHaQNdMSrY2dpLrJ6JYT46uiQT0Al613fp6WZi0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Adding strings will combine them.
@@ -367,6 +375,10 @@ for letter in python:
 <a name="5"></a>
 ## 5. [String slicing](https://www.coursera.org/learn/get-started-with-python/lecture/7741K/string-slicing) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/eXgFAjoiQFOxT7lU6MH6eQ.processed/full/720p/index.mp4?Expires=1744588800&Signature=Ht5fcM8Sewa8NI8RFDUXwqzrTjRMNWwdYlowuo9abBMTefymsjhyFyQc0Q79PgNvee~GF5T9bXeuXf6lzBzaFj02zpdNp8wC3GdCoM8uw5bBRG7WqMwmROs6RObZOPnIpV9UF0TjG0Y6GuLJQrBPs6N1d8S9qOCf-dySCpfWF8s_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # The index() method returns index of character's first occurrence in string.
@@ -539,10 +551,13 @@ fruit[4:]
     True
 
 
-
 <a name="6"></a>
 ## 6. [Format strings](https://www.coursera.org/learn/get-started-with-python/lecture/mYMRp/format-strings) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/g8J7PrEhQGWRB6jxEFxorw.processed/full/720p/index.mp4?Expires=1744588800&Signature=OAL-vLd26AVSdIC14u7lzc33PBS~LKDWFk~-R~WZejsFRtGH3Tkg2AhAq9ZoCGsOgqS5pFQ8lVoIZpOrYFb69yWZ0R-yoiv6uyRczOiQ3cpkiEdE7qkh-IyB2GzD94AT5wDmN1w6to9fzUULVjgay2G9K~Z5H3QVSbgXQySkXoY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Use format() method to insert values into your string, indicated by braces.

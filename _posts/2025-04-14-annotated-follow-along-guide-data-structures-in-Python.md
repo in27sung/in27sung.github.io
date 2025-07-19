@@ -222,6 +222,10 @@ print(power)
 <a name="3"></a>
 ## 3. [Introduction to tuples](https://www.coursera.org/learn/get-started-with-python/lecture/JjSVN/introduction-to-tuples) 
 
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/rS63Tb48Qk2_MT4ttTTvRQ.processed/full/720p/index.mp4?Expires=1745020800&Signature=YDjKHSJoS8vhpDxMAKPrbNn3sIthDOHOU1gTtiU1514kVh~cWGCnlMhG8tBxnBClrcCD77a-2BCrv0dwuQsWmtxUWvTLIr7GvYcSPID6VRHyi9V~AHdz3gV-VoRcN51itZYXBUrUA7OIpPgAUn~v3Ct6IoC4lu2OvGrmWihAqiA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ```python
 # Tuples are instantiated with parentheses.
@@ -231,13 +235,22 @@ fullname = ('Masha', 'Z', 'Hopper')
 fullname[2] = 'Copper'
 print(fullname)
 ```
+    ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+    <ipython-input-1-2707d2b50c4d> in <module>
+        3 
+        4 # Tuples are immutable, so their elements cannot be overwritten.
+    ----> 5 fullname[2] = 'Copper'
+        6 print(fullname)
 
+    TypeError: 'tuple' object does not support item assignment
 
 ```python
 # You can combine tuples using addition.
 fullname = fullname + ('Jr',)
 print(fullname)
 ```
+    ('Masha', 'Z', 'Hopper', 'Jr')
 
 
 ```python
@@ -246,6 +259,7 @@ fullname = ['Masha', 'Z', 'Hopper']
 fullname = tuple(fullname)
 print(fullname)
 ```
+    ('Masha', 'Z', 'Hopper')
 
 
 ```python
@@ -265,7 +279,7 @@ def to_dollars_cents(price):
 # Functions that return multiple values return them in a tuple.
 to_dollars_cents(6.55)
 ```
-
+    (6, 55)
 
 ```python
 # "Unpacking" a tuple allows a tuple's elements to be assigned to variables.
@@ -273,12 +287,14 @@ dollars, cents = to_dollars_cents(6.55)
 print(dollars + 1)
 print(cents + 1)
 ```
-
+    7
+    56
 
 ```python
 # The data type of an element of an unpacked tuple is not necessarily a tuple.
 type(dollars)
 ```
+    int
 
 
 ```python
@@ -299,16 +315,30 @@ team = [('Marta', 20, 'center'),
 for name, age, position in team:
     print(name)
 ```
-
+    Marta
+    Ana
+    Gabi
+    Luz
+    Lorena
 
 ```python
 # This code produces the same result as the code in the cell above.
 for player in team:
     print(player[0])
 ```
+    Marta
+    Ana
+    Gabi
+    Luz
+    Lorena
 
 <a name="4"></a>
 ## 4. [More with loops, lists, and tuples](https://www.coursera.org/learn/get-started-with-python/lecture/FQoWl/more-with-loops-lists-and-tuples) 
+
+<video controls width="100%" style="max-width: 720px;">
+  <source src="https://d3c33hcgiwev3.cloudfront.net/iu7cf2SoRDOowQAaiOd55g.processed/full/720p/index.mp4?Expires=1745020800&Signature=ga5fk8oKm-AdXoQNkaNYvVDp6TjHQZIc50eKuQH7oYKeR5fl0Ce~k5R0xrgjnfqJXDjG2fjUshW4o25jPdxhXu~IPo33O~rlzqbgJlDp5ccw69UTSppo6BVqSzNs2XtO32-fau-vUaDdkN6D46LtXi78fbUW~Hf56teti7-VzZw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ```python
@@ -342,7 +372,20 @@ def player_position(players):
 for player in player_position(team):
     print(player)
 ```
+    Name:               Marta 
+    Position:          center
 
+    Name:                 Ana 
+    Position:     point guard
+
+    Name:                Gabi 
+    Position:  shooting guard
+
+    Name:                 Luz 
+    Position:   power forward
+
+    Name:              Lorena 
+    Position:   small forward
 
 ```python
 # Nested loops can produce the different combinations of pips (dots) in
@@ -352,7 +395,19 @@ for left in range(7):
         print(f"[{left}|{right}]", end=" ")
     print('\n')
 ```
+    [0|0] [0|1] [0|2] [0|3] [0|4] [0|5] [0|6] 
 
+    [1|1] [1|2] [1|3] [1|4] [1|5] [1|6] 
+
+    [2|2] [2|3] [2|4] [2|5] [2|6] 
+
+    [3|3] [3|4] [3|5] [3|6] 
+
+    [4|4] [4|5] [4|6] 
+
+    [5|5] [5|6] 
+
+    [6|6] 
 
 ```python
 # Create a list of dominoes, with each domino reprented as a tuple.
@@ -362,12 +417,41 @@ for left in range(7):
         dominoes.append((left, right))
 dominoes
 ```
+    [(0, 0),
+    (0, 1),
+    (0, 2),
+    (0, 3),
+    (0, 4),
+    (0, 5),
+    (0, 6),
+    (1, 1),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (2, 2),
+    (2, 3),
+    (2, 4),
+    (2, 5),
+    (2, 6),
+    (3, 3),
+    (3, 4),
+    (3, 5),
+    (3, 6),
+    (4, 4),
+    (4, 5),
+    (4, 6),
+    (5, 5),
+    (5, 6),
+    (6, 6)]
 
 
 ```python
 # Select index 1 of the tuple at index 4 in the list of dominoes.
 dominoes[4][1]
 ```
+    4
 
 In the following code cells are two ways to add the total number of pips on each individual domino to a list, as indicated in this diagram:
 
@@ -384,6 +468,7 @@ for domino in dominoes:
     pips_from_loop.append(domino[0] + domino[1])
 print(pips_from_loop)
 ```
+    [0, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 7, 4, 5, 6, 7, 8, 6, 7, 8, 9, 8, 9, 10, 10, 11, 12]
 
 
 ```python
@@ -391,7 +476,8 @@ print(pips_from_loop)
 pips_from_list_comp = [domino[0] + domino[1] for domino in dominoes]
 pips_from_loop == pips_from_list_comp
 ```
-
+    True
+    
 <a name="5"></a>
 ## 5. [Introduction to dictionaries](https://www.coursera.org/learn/get-started-with-python/lecture/QVo2v/introduction-to-dictionaries) 
 
